@@ -1,0 +1,16 @@
+body {
+  font-size: 16px;
+  line-height: 28px;
+  color: $default;
+  @extend %Gilroy-Light;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

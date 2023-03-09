@@ -4,7 +4,105 @@
 @import 'global';
 @import 'libs';
 
-
-
+.header {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(129, 129, 129, 0.4);
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__contact {
+    display: flex;
+  }
+  .user-nav {
+    margin-right: 42px;
+    &__list {
+      display: flex;
+      &:first-child {
+        padding-left: 40px;
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          width: 27px;
+          height: 2px;
+          background-color: $accent;
+          top: 10px;
+          left: 0;
+        }
+      }
+    }
+    &__item {
+      display: flex;
+    }
+    .user-nav__item + .user-nav__item {
+      margin-left: 35px;
+    }
+    &__img {
+      margin-right: 10px;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+    &__link {
+      line-height: 19px;
+      @extend %Gilroy-Bold;
+    }
+    &__text {
+      font-size: 13px;
+      line-height: 15px;
+      color: $gray;
+    }
+  }
+  .user-contact {
+    &__link {
+      font-size: 13px;
+      line-height: 16px;
+      padding: 16px 32px;
+      border: 1px solid $accent;
+      box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+      border-radius: 4px;
+      color: $accent;
+      text-align: center;
+      @extend %Gilroy-Bold;
+    }
+  }
+}
+.top {
+  padding: 15px 0 20px;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu {
+    &__list {
+      display: flex;
+    }
+    &__item {
+      border-left: 1px dotted $gray;
+      &:first-child {
+        border-left: none;
+      }
+    }
+    .menu__item + .menu__item {
+      padding-left: 30px;
+      margin-left: 30px;
+    }
+    &__link {
+      font-size: 14px;
+      line-height: 16px;
+      @extend %Gilroy-Bold;
+    }
+  }
+  .social {
+    display: flex;
+    .social__link + .social__link {
+      margin-left: 7px;
+    }
+  }
+}
 
 @import 'media';
