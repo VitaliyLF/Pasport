@@ -95,16 +95,16 @@
       font-size: 14px;
       line-height: 16px;
       @extend %Gilroy-Bold;
-      &--active {
+      &:hover {
         color: $blue;
       }
     }
   }
-  .social {
+  &__social {
     display: flex;
-    .social__link + .social__link {
-      margin-left: 7px;
-    }
+  }
+  &__social-link + &__social-link {
+    margin-left: 7px;
   }
 }
 .top {
@@ -393,24 +393,6 @@
   &__content {
     margin-bottom: 116px;
   }
-  &__title {
-    font-size: 36px;
-    line-height: 38px;
-    @extend %Gilroy-ExtraBold;
-    padding-bottom: 25px;
-    margin-bottom: 20px;
-    position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      width: 80px;
-      height: 4px;
-      background-color: $accent;
-      border-radius: 6px;
-      bottom: 0;
-      left: 0;
-    }
-  }
   &__descr {
     font-size: 24px;
     line-height: 24px;
@@ -463,7 +445,7 @@
     visibility: hidden;
   }
   &__guarantee {
-    padding: 65px 67px 66px 70px;
+    padding: 65px 37px 66px 70px;
     border: 3px solid $blue;
   }
   &__guarantee-inner {
@@ -481,9 +463,285 @@
   &__guarantee-text {
     line-height: 30px;
     color: rgba(34, 34, 34, 0.7);
-    &:first-of-type {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
+    max-width: 858px;
+  }
+}
+.questions {
+  background-color: #f8f8f8;
+  padding: 120px 0;
+  &__inner {
+    display: flex;
+  }
+  &__content {
+    margin-right: 60px;
+  }
+  &__item {
+    width: 740px;
+    margin-bottom: 7px;
+    padding: 20px 33px;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    &:last-of-type {
+      margin-bottom: 22px;
     }
+  }
+  &__item-title {
+    cursor: pointer;
+    line-height: 24px;
+    @extend %Gilroy-Bold;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url(../images/icon/arrow-down.svg);
+      background-repeat: no-repeat;
+      width: 12px;
+      height: 7px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      transition: all 0.3s ease;
+    }
+    &.active {
+      &::after {
+        transform: rotate(180deg);
+        transition: all 0.3s ease;
+      }
+    }
+  }
+  &__item-text {
+    @extend %Gilroy-Regular;
+    display: none;
+  }
+  &__link {
+    @extend %link;
+    display: block;
+    max-width: 270px;
+    padding: 23px 45px;
+  }
+  &__person {
+    text-align: center;
+  }
+  &__person-img {
+    max-width: 240px;
+    height: 304px;
+    object-fit: cover;
+    margin-bottom: 11px;
+  }
+  &__person-name {
+    font-size: 18px;
+    line-height: 38px;
+    @extend %Gilroy-Bold;
+  }
+  &__person-position {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(34, 34, 34, 0.7);
+    @extend %Gilroy-Regular;
+  }
+}
+.social {
+  padding-top: 120px;
+  &__inner {
+    display: flex;
+  }
+  &__inst {
+    margin-right: 81px;
+  }
+  .title {
+    max-width: 313px;
+  }
+  &__inst-img {
+    max-width: 419px;
+    height: 635px;
+    object-fit: cover;
+  }
+  &__vk-title {
+    max-width: 369px;
+    font-size: 28px;
+    line-height: 34px;
+    @extend %Gilroy-ExtraBold;
+    margin-bottom: 48px;
+  }
+  &__vk-link {
+    display: block;
+    transform: translateY(-23px);
+  }
+  &__vk-icon {
+    margin: 0 auto 11px;
+    width: 46px;
+    height: 46px;
+  }
+  &__vk-descr {
+    font-size: 18px;
+    line-height: 24px;
+    color: #5181b8;
+    @extend %Gilroy-Bold;
+    text-align: center;
+  }
+}
+.reviews {
+  background-color: #f8f8f8;
+  padding: 120px 0;
+  .title {
+    max-width: 481px;
+  }
+  .comments {
+    &__inner {
+      display: flex;
+      margin-bottom: 75px;
+    }
+    &__item {
+      width: 100%;
+      max-width: 370px;
+    }
+    &__info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 26px;
+    }
+    &__person {
+      margin-right: 26px;
+      position: relative;
+    }
+    &__person-avatar {
+      max-width: 86px;
+      height: 86px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    &__person-social {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    &__info-content {
+      display: flex;
+      flex-direction: column;
+    }
+    &__info-name {
+      line-height: 16px;
+      color: $accent;
+      @extend %Gilroy-ExtraBold;
+      margin-bottom: 8px;
+    }
+    &__info-time {
+      font-size: 14px;
+      line-height: 14px;
+      color: rgba(34, 34, 34, 0.7);
+      @extend %Gilroy-Regular;
+    }
+    .slick-slider .slick-slide {
+      margin-right: 30px;
+    }
+    .slick-arrow {
+      position: absolute;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      font-size: none;
+      background-color: transparent;
+      top: 43px;
+      cursor: pointer;
+      z-index: 10;
+    }
+    .slick-next {
+      right: 0;
+    }
+    .slick-prev {
+      left: 0;
+    }
+  }
+  .photo {
+    &__inner {
+      display: flex;
+    }
+    &__item {
+      border-radius: 4px;
+    }
+    &__img {
+      max-width: 270px;
+      height: 400px;
+      object-fit: cover;
+    }
+    .slick-slider .slick-slide {
+      margin-right: 30px;
+    }
+    .slick-arrow {
+      position: absolute;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      font-size: none;
+      background-color: transparent;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      z-index: 10;
+    }
+    .slick-next {
+      right: -60px;
+    }
+    .slick-prev {
+      left: -60px;
+    }
+  }
+}
+.card {
+  padding: 67px 0 76px;
+  &__inner {
+    display: flex;
+  }
+  &__content {
+    max-width: 600px;
+    margin-top: 100px;
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 24px;
+    color: rgba(34, 34, 34, 0.7);
+    margin-bottom: 43px;
+  }
+  &__benefits {
+    margin-bottom: 45px;
+  }
+  &__benefits-text {
+    font-size: 24px;
+    line-height: 34px;
+    @extend %Gilroy-Bold;
+    margin-bottom: 17px;
+  }
+  &__benefits-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  &__benefits-img {
+    margin-right: 14px;
+  }
+  &__benefits-descr {
+    font-size: 18px;
+    line-height: 18px;
+    color: $blue;
+    @extend %Gilroy-Bold;
+  }
+  &__link {
+    @extend %link;
+    padding: 22px 44px;
+  }
+  &__img {
+    max-width: 900px;
+    height: 724px;
+    object-fit: cover;
+    margin-left: -315px;
+    z-index: -10;
   }
 }
 
