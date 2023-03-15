@@ -15,8 +15,11 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a class="logo" href="#0">
-            <img class="logo__img" src="images/icon/logo.svg" alt="Логотип" />
+          <a class="header__logo" href="#0">
+            <img
+              class="header__logo-img"
+              src="images/icon/logo-header.svg"
+              alt="Логотип" />
           </a>
           <div class="header__contact">
             <nav class="user-nav">
@@ -201,279 +204,214 @@
     </section>
     <section class="price">
       <div class="container">
-        <div class="price__table">
-          <div class="price__buttons">
-            <button class="price__btn active" data-filter=".category-a">
-              Для взрослых
-            </button>
-            <button class="price__btn" data-filter=".category-b">
-              Для детей 14-17 лет
-            </button>
-            <button class="price__btn" data-filter=".category-c">
-              Для детей до 14 лет
-            </button>
-          </div>
-          <div class="price__inner">
-            <div class="price__content table mix category-a">
-              <div class="table-top">
-                <div class="table-top__item">
-                  <span class="table-top__item-text">Срок изготовления</span>
+        <h2 class="price__title">Стоимость оформления</h2>
+        <div class="price__links">
+          <a class="price__link price__link--active" href="#tab-1">Москва</a>
+          <a class="price__link" href="#tab-2">Регионы</a>
+        </div>
+        <div class="price__content price__content--active" id="tab-1">
+          <div class="price__top">
+            <div class="price__info">
+              <div class="price__info-top">
+                <div class="price__info-title">
+                  Биометрический, нового образца
                 </div>
-                <div class="table-top__item">
-                  <span class="table-top__item-text">Дата готовности*</span>
-                </div>
-                <div class="table-top__item">
-                  <span class="table-top__item-text">Биометрический</span>
-                </div>
-                <div class="table-top__item">
-                  <span class="table-top__item-text">Старого образца</span>
-                </div>
+                <div class="price__info-title">Дата получения*</div>
               </div>
-              <div class="table-content">
-                <div class="table-content__row">
-                  <span class="table-content__row-text">21-23 рабочих дня</span>
-                  <span class="table-content__row-text">07 Октября</span>
-                  <span class="table-content__row-text">9 500Р</span>
-                  <span class="table-content__row-text">8 500Р</span>
+              <div class="price__info-content">
+                <div class="price__info-item">
+                  <p class="price__info-text">Паспорт от 3 до 7 дней</p>
+                  <p class="price__info-text">10 ноября</p>
                 </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">15-17 рабочих дня</span>
-                  <span class="table-content__row-text">29 Сентября</span>
-                  <span class="table-content__row-text">11 500Р</span>
-                  <span class="table-content__row-text">10 500Р</span>
+                <div class="price__info-item">
+                  <p class="price__info-text">Паспорт от 8 до 14 дней</p>
+                  <p class="price__info-text">26 ноября</p>
                 </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text"
-                    >12-14 рабочих дней</span
-                  >
-                  <span class="table-content__row-text">24 Сентября</span>
-                  <span class="table-content__row-text">13 500Р</span>
-                  <span class="table-content__row-text">12 500Р</span>
+                <div class="price__info-item">
+                  <p class="price__info-text">Паспорт от 15 до 29 дней</p>
+                  <p class="price__info-text">10 декабря</p>
                 </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">10 рабочих дней</span>
-                  <span class="table-content__row-text">22 Сентября</span>
-                  <span class="table-content__row-text">14 500Р</span>
-                  <span class="table-content__row-text">13 500Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">9 рабочих дней</span>
-                  <span class="table-content__row-text">21 Сентября</span>
-                  <span class="table-content__row-text">16 500Р</span>
-                  <span class="table-content__row-text">15 500Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">8 рабочих дней</span>
-                  <span class="table-content__row-text">18 Сентября</span>
-                  <span class="table-content__row-text">19 000Р</span>
-                  <span class="table-content__row-text">18 000Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">7 рабочих дней</span>
-                  <span class="table-content__row-text">17 Сентября</span>
-                  <span class="table-content__row-text">21 000Р</span>
-                  <span class="table-content__row-text">20 000Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">6 рабочих дней</span>
-                  <span class="table-content__row-text">16 Сентября</span>
-                  <span class="table-content__row-text">24 000Р</span>
-                  <span class="table-content__row-text">23 000Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">5 рабочих дней</span>
-                  <span class="table-content__row-text">15 Сентября</span>
-                  <span class="table-content__row-text">30 000Р</span>
-                  <span class="table-content__row-text">28 000Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">4 рабочих дня</span>
-                  <span class="table-content__row-text">14 Сентября</span>
-                  <span class="table-content__row-text">42 000Р</span>
-                  <span class="table-content__row-text">39 000Р</span>
+                <div class="price__info-item">
+                  <p class="price__info-text">Паспорт от 30 дней</p>
+                  <p class="price__info-text">10 декабря</p>
                 </div>
               </div>
             </div>
-            <div class="price__content table mix category-b">
-              <div class="table-top">
-                <div class="table-top__item">
-                  <span class="table-top__item-text">Срок изготовления</span>
-                </div>
-                <div class="table-top__item">
-                  <span class="table-top__item-text">Дата готовности*</span>
-                </div>
-                <div class="table-top__item">
-                  <span class="table-top__item-text">Биометрический</span>
-                </div>
-                <div class="table-top__item">
-                  <span class="table-top__item-text">Старого образца</span>
-                </div>
+            <div class="price__benefit">
+              <div class="price__benefit-top">
+                <div class="price__benefit-title">Преимущества</div>
               </div>
-              <div class="table-content">
-                <div class="table-content__row">
-                  <span class="table-content__row-text">21-23 рабочих дня</span>
-                  <span class="table-content__row-text">07 Октября</span>
-                  <span class="table-content__row-text">8 500Р</span>
-                  <span class="table-content__row-text">7 500Р</span>
+              <div class="price__benefit-content">
+                <div class="price__benefit-item">
+                  <img
+                    class="price__benefit-img"
+                    src="images/icon/checkon.svg"
+                    alt="Галочка" />
+                  <p class="price__benefit-text">
+                    Гарантия правильного оформления документов
+                  </p>
                 </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">15-17 рабочих дня</span>
-                  <span class="table-content__row-text">29 Сентября</span>
-                  <span class="table-content__row-text">9 500Р</span>
-                  <span class="table-content__row-text">6 500Р</span>
+                <div class="price__benefit-item">
+                  <img
+                    class="price__benefit-img"
+                    src="images/icon/checkon.svg"
+                    alt="Галочка" />
+                  <p class="price__benefit-text">
+                    Сдача документов без очереди
+                  </p>
                 </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text"
-                    >12-14 рабочих дней</span
-                  >
-                  <span class="table-content__row-text">24 Сентября</span>
-                  <span class="table-content__row-text">7 500Р</span>
-                  <span class="table-content__row-text">5 500Р</span>
+                <div class="price__benefit-item">
+                  <img
+                    class="price__benefit-img"
+                    src="images/icon/checkon.svg"
+                    alt="Галочка" />
+                  <p class="price__benefit-text">
+                    Получение паспорта без очередей
+                  </p>
                 </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">10 рабочих дней</span>
-                  <span class="table-content__row-text">22 Сентября</span>
-                  <span class="table-content__row-text">11 500Р</span>
-                  <span class="table-content__row-text">10 500Р</span>
+                <div class="price__benefit-item">
+                  <img
+                    class="price__benefit-img"
+                    src="images/icon/checkon.svg"
+                    alt="Галочка" />
+                  <p class="price__benefit-text">
+                    Индивидуальный подход в любой ситуации
+                  </p>
                 </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">9 рабочих дней</span>
-                  <span class="table-content__row-text">21 Сентября</span>
-                  <span class="table-content__row-text">13 500Р</span>
-                  <span class="table-content__row-text">14 500Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">8 рабочих дней</span>
-                  <span class="table-content__row-text">18 Сентября</span>
-                  <span class="table-content__row-text">15 000Р</span>
-                  <span class="table-content__row-text">17 000Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">7 рабочих дней</span>
-                  <span class="table-content__row-text">17 Сентября</span>
-                  <span class="table-content__row-text">19 000Р</span>
-                  <span class="table-content__row-text">21 000Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">6 рабочих дней</span>
-                  <span class="table-content__row-text">16 Сентября</span>
-                  <span class="table-content__row-text">22 000Р</span>
-                  <span class="table-content__row-text">24 000Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">5 рабочих дней</span>
-                  <span class="table-content__row-text">15 Сентября</span>
-                  <span class="table-content__row-text">25 000Р</span>
-                  <span class="table-content__row-text">26 000Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">4 рабочих дня</span>
-                  <span class="table-content__row-text">14 Сентября</span>
-                  <span class="table-content__row-text">30 000Р</span>
-                  <span class="table-content__row-text">32 000Р</span>
-                </div>
-              </div>
-            </div>
-            <div class="price__content table mix category-c">
-              <div class="table-top">
-                <div class="table-top__item">
-                  <span class="table-top__item-text">Срок изготовления</span>
-                </div>
-                <div class="table-top__item">
-                  <span class="table-top__item-text">Дата готовности*</span>
-                </div>
-                <div class="table-top__item">
-                  <span class="table-top__item-text">Биометрический</span>
-                </div>
-                <div class="table-top__item">
-                  <span class="table-top__item-text">Старого образца</span>
-                </div>
-              </div>
-              <div class="table-content">
-                <div class="table-content__row">
-                  <span class="table-content__row-text">21-23 рабочих дня</span>
-                  <span class="table-content__row-text">07 Октября</span>
-                  <span class="table-content__row-text">11 500Р</span>
-                  <span class="table-content__row-text">10 500Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">15-17 рабочих дня</span>
-                  <span class="table-content__row-text">29 Сентября</span>
-                  <span class="table-content__row-text">12 500Р</span>
-                  <span class="table-content__row-text">13 500Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text"
-                    >12-14 рабочих дней</span
-                  >
-                  <span class="table-content__row-text">24 Сентября</span>
-                  <span class="table-content__row-text">14 500Р</span>
-                  <span class="table-content__row-text">15 500Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">10 рабочих дней</span>
-                  <span class="table-content__row-text">22 Сентября</span>
-                  <span class="table-content__row-text">16 500Р</span>
-                  <span class="table-content__row-text">17 500Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">9 рабочих дней</span>
-                  <span class="table-content__row-text">21 Сентября</span>
-                  <span class="table-content__row-text">18 500Р</span>
-                  <span class="table-content__row-text">19 500Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">8 рабочих дней</span>
-                  <span class="table-content__row-text">18 Сентября</span>
-                  <span class="table-content__row-text">21 000Р</span>
-                  <span class="table-content__row-text">22 000Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">7 рабочих дней</span>
-                  <span class="table-content__row-text">17 Сентября</span>
-                  <span class="table-content__row-text">23 000Р</span>
-                  <span class="table-content__row-text">24 000Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">6 рабочих дней</span>
-                  <span class="table-content__row-text">16 Сентября</span>
-                  <span class="table-content__row-text">25 000Р</span>
-                  <span class="table-content__row-text">26 000Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">5 рабочих дней</span>
-                  <span class="table-content__row-text">15 Сентября</span>
-                  <span class="table-content__row-text">32 000Р</span>
-                  <span class="table-content__row-text">30 000Р</span>
-                </div>
-                <div class="table-content__row">
-                  <span class="table-content__row-text">4 рабочих дня</span>
-                  <span class="table-content__row-text">14 Сентября</span>
-                  <span class="table-content__row-text">45 000Р</span>
-                  <span class="table-content__row-text">43 000Р</span>
+                <div class="price__benefit-item">
+                  <img
+                    class="price__benefit-img"
+                    src="images/icon/checkon.svg"
+                    alt="Галочка" />
+                  <p class="price__benefit-text">Гарантия получения в срок*</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="price__info">
-            <p class="price__info-text">
-              * Ориентировочная дата готовности при подаче сегодня до 16:00 **
-              День подачи и получения в ФМС входят в сроки изготовления
+          <div class="price__design">
+            <div class="price__design-title">Стоимость оформления</div>
+            <div class="price__design-cost cost">
+              <div class="cost__title">От 9 500 рублей</div>
+              <p class="cost__subtitle">Гарантия низкой цены!</p>
+            </div>
+            <a class="price__design-link" href="#0"
+              >Рассчитать стоимость для меня</a
+            >
+          </div>
+          <div class="price__descr">
+            <p class="price__descr-text">
+              * Ориентировочная дата готовности при подаче сегодня до 16:00
             </p>
-            <img
-              class="price__info-img"
-              src="images/icon/tax.svg"
-              alt="Госпошлина" />
+            <p class="price__descr-text">
+              ** День подачи и получения в ФМС входят в сроки изготовления (при
+              отсутствии официальных причин задержек)
+            </p>
+            <p class="price__descr-text">
+              *** Пошлина 5000 рублей оплачивается отдельно
+            </p>
           </div>
         </div>
-        <div class="price__connection">
-          <h3 class="price__connection-title">
-            У вас сложная ситуация? <br />
-            Требуется индивидуальное решение?
-          </h3>
-          <a class="price__connection-link" href="tel:88004443636"
-            >Свяжитесь с нами</a
-          >
+        <div class="price__content" id="tab-2">
+          <div class="price__top">
+            <div class="price__info">
+              <div class="price__info-top">
+                <div class="price__info-title">
+                  Биометрический, нового образца
+                </div>
+                <div class="price__info-title">Дата получения*</div>
+              </div>
+              <div class="price__info-content">
+                <div class="price__info-item">
+                  <p class="price__info-text">Паспорт от 3 до 7 дней</p>
+                  <p class="price__info-text">10 октября</p>
+                </div>
+                <div class="price__info-item">
+                  <p class="price__info-text">Паспорт от 8 до 14 дней</p>
+                  <p class="price__info-text">26 октября</p>
+                </div>
+                <div class="price__info-item">
+                  <p class="price__info-text">Паспорт от 15 до 29 дней</p>
+                  <p class="price__info-text">10 ноября</p>
+                </div>
+                <div class="price__info-item">
+                  <p class="price__info-text">Паспорт от 30 дней</p>
+                  <p class="price__info-text">10 ноября</p>
+                </div>
+              </div>
+            </div>
+            <div class="price__benefit">
+              <div class="price__benefit-top">
+                <div class="price__benefit-title">Преимущества</div>
+              </div>
+              <div class="price__benefit-content">
+                <div class="price__benefit-item">
+                  <img
+                    class="price__benefit-img"
+                    src="images/icon/checkon.svg"
+                    alt="Галочка" />
+                  <p class="price__benefit-text">
+                    Гарантия правильного оформления документов
+                  </p>
+                </div>
+                <div class="price__benefit-item">
+                  <img
+                    class="price__benefit-img"
+                    src="images/icon/checkon.svg"
+                    alt="Галочка" />
+                  <p class="price__benefit-text">
+                    Сдача документов без очереди
+                  </p>
+                </div>
+                <div class="price__benefit-item">
+                  <img
+                    class="price__benefit-img"
+                    src="images/icon/checkon.svg"
+                    alt="Галочка" />
+                  <p class="price__benefit-text">
+                    Получение паспорта без очередей
+                  </p>
+                </div>
+                <div class="price__benefit-item">
+                  <img
+                    class="price__benefit-img"
+                    src="images/icon/checkon.svg"
+                    alt="Галочка" />
+                  <p class="price__benefit-text">
+                    Индивидуальный подход в любой ситуации
+                  </p>
+                </div>
+                <div class="price__benefit-item">
+                  <img
+                    class="price__benefit-img"
+                    src="images/icon/checkon.svg"
+                    alt="Галочка" />
+                  <p class="price__benefit-text">Гарантия получения в срок*</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="price__design">
+            <div class="price__design-title">Стоимость оформления</div>
+            <div class="price__design-cost cost">
+              <div class="cost__title">От 7 500 рублей</div>
+              <p class="cost__subtitle">Гарантия низкой цены!</p>
+            </div>
+            <a class="price__design-link" href="#0"
+              >Рассчитать стоимость для меня</a
+            >
+          </div>
+          <div class="price__descr">
+            <p class="price__descr-text">
+              * Ориентировочная дата готовности при подаче сегодня до 16:00
+            </p>
+            <p class="price__descr-text">
+              ** День подачи и получения в ФМС входят в сроки изготовления (при
+              отсутствии официальных причин задержек)
+            </p>
+            <p class="price__descr-text">
+              *** Пошлина 5000 рублей оплачивается отдельно
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -880,7 +818,7 @@
             <img
               class="contact__img"
               src="images/icon/location.svg"
-              alt="Местонахождение" />
+              alt="Местоположение" />
             <a class="contact__link" href="#0">
               <span class="contact__title">г. Москва</span>
               <span class="contact__text">ул. Воронцовская, 20</span>
@@ -938,7 +876,7 @@
                 src="images/icon/social-vk.svg"
                 alt="ВК" />
             </a>
-            <a class="contact__link" href="#0">
+            <a class="contact__social-link" href="#0">
               <img
                 class="contact__social-img"
                 src="images/icon/social-tg.svg"
@@ -984,10 +922,9 @@
         <a
           class="features__video"
           data-fancybox
-          data-type="iframe"
           data-width="1400"
-          data-height="800"
-          href="https://youtu.be/S_dfq9rFWAE">
+          data-height="790"
+          href="video.mp4">
           <img
             class="features__video-img"
             src="images/features-video.jpg"
@@ -1085,6 +1022,129 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__info">
+            <a class="footer__info-link" href="#0">
+              <img
+                class="footer__info-img"
+                src="images/icon/logo-footer.svg"
+                alt="Логотип" />
+            </a>
+            <p class="footer__info-text">
+              Срочное гарантированное оформление загранпаспорта в Москве
+            </p>
+          </div>
+          <div class="footer__phone">
+            <div class="footer__phone-item">
+              <img
+                class="footer__phone-img"
+                src="images/icon/phone-white.svg"
+                alt="Иконка телефона" />
+              <div class="footer__phone-content">
+                <a class="footer__phone-link" href="tel:84996419052"
+                  >8 (499) 641 90 52</a
+                >
+                <p class="footer__phone-text">Для Москвы и МО</p>
+              </div>
+            </div>
+            <div class="footer__phone-item">
+              <img
+                class="footer__phone-img"
+                src="images/icon/phone-white.svg"
+                alt="Иконка телефона" />
+              <div class="footer__phone-content">
+                <a class="footer__phone-link" href="tel:88004443636"
+                  >8 (800) 444 36 36</a
+                >
+                <p class="footer__phone-text">Для регионов РФ</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__adress">
+            <div class="footer__adress-item">
+              <img
+                class="footer__adress-img"
+                src="images/icon/location-white.svg"
+                alt="Местоположение" />
+              <div class="footer__adress-content">
+                <a class="footer__adress-link" href="#0">г. Москва</a>
+                <p class="footer__adress-street">ул. Воронцовская, 20</p>
+              </div>
+            </div>
+            <div class="footer__adress-item">
+              <img
+                class="footer__adress-img"
+                src="images/icon/contact-time-white.svg"
+                alt="Местоположение" />
+              <p class="footer__adress-text">
+                Будни с 09:00 до 21:00 Суббота с 10:00 до 19:00 Воскресенье
+                выходной
+              </p>
+            </div>
+          </div>
+          <div class="footer__rating">
+            <div class="footer__rating-title">
+              5,0
+              <img
+                class="footer__rating-img"
+                src="images/icon/start-rating.svg"
+                alt="Звезда" />
+              в Яндексе
+            </div>
+            <p class="footer__rating-text">На основе 75 отзывов</p>
+          </div>
+          <div class="footer__rating">
+            <div class="footer__rating-title">
+              4,7
+              <img
+                class="footer__rating-img"
+                src="images/icon/start-rating.svg"
+                alt="Звезда" />
+              в Google
+            </div>
+            <p class="footer__rating-text">На основе 120 отзывов</p>
+            <div class="footer__rating-social">
+              <a class="footer__rating-link" href="#0">
+                <img
+                  class="footer__rating-icon"
+                  src="images/icon/social-facebook.svg"
+                  alt="Фейсбук" />
+              </a>
+              <a class="footer__rating-link" href="#0">
+                <img
+                  class="footer__rating-icon"
+                  src="images/icon/social-vk.svg"
+                  alt="ВК" />
+              </a>
+              <a class="footer__rating-link" href="#0">
+                <img
+                  class="footer__rating-icon"
+                  src="images/icon/social-tg.svg"
+                  alt="Телеграмм" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-copy">
+      <div class="container">
+        <div class="footer-copy__inner">
+          <div class="footer-copy__item">
+            <a class="footer-copy__link" href="#0"
+              >© www.passport-mfc.ru, 2009-2023. Все права защищены</a
+            >
+          </div>
+          <div class="footer-copy__item">
+            <a class="footer-copy__link" href="#0"
+              >Политика конфиденциальности</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="js/main.min.js"></script>
   </body>
 </html>
