@@ -1,25 +1,11 @@
 $(function () {
-  $('.price__btn:first-child').addClass('active')
-  var activeFilter = $('.price__btn.active').attr('data-filter')
+  $('.price__link').on('click', function (e) {
+    e.preventDefault()
+    $('.price__link').removeClass('price__link--active')
+    $(this).addClass('price__link--active')
 
-  var mixer = mixitup('.price__inner', {
-    animation: {
-      duration: 800,
-      effects: 'fade scale',
-      easing: 'ease-in-out',
-    },
-    load: {
-      filter: activeFilter,
-    },
-  })
-
-  $('.price__btn').click(function () {
-    $(this).addClass('active').siblings().removeClass('active')
-    var filterValue = $(this).attr('data-filter')
-    mixer.filter(filterValue)
-  })
-  $('.price__btn').click(function () {
-    $(this).addClass('active').siblings().removeClass('active')
+    $('.price__content').removeClass('price__content--active')
+    $($(this).attr('href')).addClass('price__content--active')
   })
 
   $('.questions__item-title').on('click', function () {
