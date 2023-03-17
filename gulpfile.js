@@ -7,6 +7,7 @@ const uglify = require('gulp-uglify')
 const imagemin = require('gulp-imagemin')
 const del = require('del')
 const browserSync = require('browser-sync').create()
+const aos = require('aos')
 
 function styles() {
   return src('app/scss/style.scss')
@@ -19,6 +20,11 @@ function styles() {
       })
     )
     .pipe(dest('app/css'))
+    .on('end', function () {
+      if (typeof window !== 'undefined') {
+        aos.init()
+      }
+    })
     .pipe(browserSync.stream())
 }
 
@@ -37,6 +43,7 @@ function scripts() {
     'node_modules/mixitup/dist/mixitup.js',
     'node_modules/slick-carousel/slick/slick.js',
     'node_modules/@fancyapps/ui/dist/fancybox.umd.js',
+    'node_modules/aos/dist/aos.js',
     'app/js/main.js',
   ])
     .pipe(concat('main.min.js'))

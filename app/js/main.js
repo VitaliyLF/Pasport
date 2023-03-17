@@ -1,4 +1,23 @@
 $(function () {
+  AOS.init()
+
+  let button = $('.call')
+
+  $(window).on('scroll', () => {
+    if ($(this).scrollTop() >= 1000) {
+      button.fadeIn()
+    } else {
+      button.fadeOut()
+    }
+  })
+
+  $('.menu__list a').on('click', function (event) {
+    event.preventDefault()
+    var id = $(this).attr('href'),
+      top = $(id).offset().top
+    $('body,html').animate({ scrollTop: top }, 1000)
+  })
+
   $('.price__link').on('click', function (e) {
     e.preventDefault()
     $('.price__link').removeClass('price__link--active')

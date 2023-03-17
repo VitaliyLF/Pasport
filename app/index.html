@@ -11,7 +11,21 @@
       type="image/x-icon" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
-  <body>
+  <body id="body">
+    <div class="call">
+      <a class="call__link call__link--tel" href="#0">
+        <img
+          class="call__link-img"
+          src="images/icon/phone-white.svg"
+          alt="Телефон" />
+      </a>
+      <a class="call__link call__link--text" href="#0">
+        <img
+          class="call__link-img"
+          src="images/icon/message.svg"
+          alt="Сообщение" />
+      </a>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -21,35 +35,33 @@
               src="images/icon/logo-header.svg"
               alt="Логотип" />
           </a>
-          <div class="header__contact">
-            <nav class="user-nav">
-              <ul class="user-nav__list">
-                <li class="user-nav__adress">
-                  <div class="user-nav__content">
-                    <a class="user-nav__link" href="tel:84996419052"
-                      >г. Москва</a
-                    >
-                    <p class="user-nav__text">ул. Воронцовская, 20</p>
+          <div class="header__content">
+            <div class="info">
+              <ul class="info__list">
+                <li class="info__item info__item--adress">
+                  <div class="info__content">
+                    <a class="info__link" href="tel:84996419052">г. Москва</a>
+                    <p class="info__text">ул. Воронцовская, 20</p>
                   </div>
                 </li>
-                <li class="user-nav__moscow">
-                  <div class="user-nav__content">
-                    <a class="user-nav__link" href="tel:84996419052"
+                <li class="info__item info__item--moscow">
+                  <div class="info__content">
+                    <a class="info__link" href="tel:84996419052"
                       >8 (499) 641 90 52</a
                     >
-                    <p class="user-nav__text">Для Москвы и МО</p>
+                    <p class="info__text">Для Москвы и МО</p>
                   </div>
                 </li>
-                <li class="user-nav__regions">
-                  <div class="user-nav__content">
-                    <a class="user-nav__link" href="tel:88004443636"
+                <li class="info__item info__item--regions">
+                  <div class="info__content">
+                    <a class="info__link" href="tel:88004443636"
                       >8 (800) 444 36 36</a
                     >
-                    <p class="user-nav__text">Для регионов РФ</p>
+                    <p class="info__text">Для регионов РФ</p>
                   </div>
                 </li>
               </ul>
-            </nav>
+            </div>
             <div class="user-contact">
               <a class="user-contact__link" href="tel:88004443636"
                 >Перезвоните мне</a
@@ -59,28 +71,28 @@
         </div>
       </div>
     </header>
-    <div class="header-nav">
+    <header class="header-nav">
       <div class="container">
         <div class="header-nav__inner">
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="#0">Цены и сроки</a>
+                <a class="menu__link" href="#price">Цены и сроки</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#0">Полезное</a>
+                <a class="menu__link" href="#features">Полезное</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#0">Справочная</a>
+                <a class="menu__link" href="#questions">Справочная</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#0">О компании</a>
+                <a class="menu__link" href="#about">О компании</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#0">Контакты</a>
+                <a class="menu__link" href="#contact">Контакты</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#0">Паспорт РФ</a>
+                <a class="menu__link" href="#body">Паспорт РФ</a>
               </li>
             </ul>
           </nav>
@@ -106,778 +118,888 @@
           </div>
         </div>
       </div>
-    </div>
-    <section class="top">
-      <div class="container">
-        <div class="top__inner">
-          <div class="top__content">
-            <h1 class="top__content-title">
-              Срочное оформление загранпаспорта в Москве от 9 500 рублей
-            </h1>
-            <div class="top__content-box">
-              <a class="top__content-link" href="#0">
-                <p class="top__content-text">
-                  <span class="top__content-age">Взрослый:</span> 48 часов
-                </p>
-              </a>
-              <a class="top__content-link" href="#0">
-                <p class="top__content-text">
-                  <span class="top__content-age">Детский:</span> 24 часа
-                </p>
-              </a>
+    </header>
+    <main class="main">
+      <section class="top">
+        <div class="container">
+          <div class="top__inner">
+            <div
+              class="top__content"
+              data-aos="fade-right"
+              data-aos-duration="1000">
+              <h1 class="top__content-title">
+                Срочное оформление загранпаспорта в Москве от 9 500 рублей
+              </h1>
+              <div class="top__content-box">
+                <a class="top__content-link" href="#0">
+                  <p class="top__content-text">
+                    <span class="top__content-age">Взрослый:</span> 48 часов
+                  </p>
+                </a>
+                <a class="top__content-link" href="#0">
+                  <p class="top__content-text">
+                    <span class="top__content-age">Детский:</span> 24 часа
+                  </p>
+                </a>
+              </div>
+              <img
+                class="top__content-guarantee"
+                src="images/icon/guarantee-icon.svg"
+                alt="Гарантия" />
             </div>
             <img
-              class="top__content-guarantee"
-              src="images/icon/guarantee-icon.svg"
-              alt="Гарантия" />
+              class="top__img"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              src="images/top-img.png"
+              alt="Картинка девушки" />
           </div>
-          <img
-            class="top__img"
-            src="images/top-img.png"
-            alt="Картинка девушки" />
-        </div>
-        <div class="top__consultation">
-          <div class="top__consultation-content">
-            <p class="top__consultation-text">Ближайшее время готовности*</p>
-            <p class="top__consultation-descr">
-              * При отсутствии оф. причин задержек
+          <div class="top__consultation">
+            <div class="top__consultation-content">
+              <p class="top__consultation-text">Ближайшее время готовности*</p>
+              <p class="top__consultation-descr">
+                * При отсутствии оф. причин задержек
+              </p>
+            </div>
+            <div class="top__consultation-box">
+              <a class="top__consultation-calendar" href="#0">
+                <img
+                  class="top__consultation-img"
+                  src="images/icon/calendar.svg"
+                  alt="Календарь" />
+              </a>
+              <span class="top__consultation-date">22 Сентября</span>
+            </div>
+            <a class="top__consultation-link" href="tel:88004443636"
+              >Консультация</a
+            >
+            <p class="top__consultation-feedback">
+              Перезвоним вам в течении часа и ответим на все ваши вопросы
             </p>
           </div>
-          <div class="top__consultation-box">
-            <a class="top__consultation-calendar" href="#0">
-              <img
-                class="top__consultation-img"
-                src="images/icon/calendar.svg"
-                alt="Календарь" />
-            </a>
-            <span class="top__consultation-date">22 Сентября</span>
-          </div>
-          <a class="top__consultation-link" href="tel:88004443636"
-            >Консультация</a
-          >
-          <p class="top__consultation-feedback">
-            Перезвоним вам в течении часа и ответим на все ваши вопросы
-          </p>
         </div>
-      </div>
-    </section>
-    <section class="top-info">
-      <div class="container">
-        <div class="top-info__inner">
-          <div class="top-info__item">
-            <h2 class="top-info__title top-info__title--contract">
-              Заключаем официальный договор
-            </h2>
-          </div>
-          <div class="top-info__item">
-            <h2 class="top-info__title top-info__title--price">
-              Честная цена без скрытых платежей
-            </h2>
-          </div>
-          <div class="top-info__item">
-            <h2 class="top-info__title top-info__title--mobile">
-              Регистрация в любом регионе России
-            </h2>
+      </section>
+      <section class="top-info">
+        <div class="container">
+          <div class="top-info__inner">
+            <div class="top-info__item">
+              <h2 class="top-info__title top-info__title--contract">
+                Заключаем официальный договор
+              </h2>
+            </div>
+            <div class="top-info__item">
+              <h2 class="top-info__title top-info__title--price">
+                Честная цена без скрытых платежей
+              </h2>
+            </div>
+            <div class="top-info__item">
+              <h2 class="top-info__title top-info__title--mobile">
+                Регистрация в любом регионе России
+              </h2>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="price">
-      <div class="container">
-        <h2 class="price__title">Стоимость оформления</h2>
-        <div class="price__links">
-          <a class="price__link price__link--active" href="#tab-1">Москва</a>
-          <a class="price__link" href="#tab-2">Регионы</a>
+      </section>
+      <section
+        class="price"
+        id="price"
+        data-aos="fade-down"
+        data-aos-duration="1000">
+        <div class="container">
+          <h2 class="price__title">Стоимость оформления</h2>
+          <div class="price__links">
+            <a class="price__link price__link--active" href="#tab-1">Москва</a>
+            <a class="price__link" href="#tab-2">Регионы</a>
+          </div>
+          <div class="price__content price__content--active" id="tab-1">
+            <div class="price__top">
+              <div class="price__info">
+                <div class="price__info-top">
+                  <h3 class="price__info-title">
+                    Биометрический, нового образца
+                  </h3>
+                  <h3 class="price__info-title">Дата получения*</h3>
+                </div>
+                <div class="price__info-content">
+                  <div class="price__info-item">
+                    <p class="price__info-text">Паспорт от 3 до 7 дней</p>
+                    <p class="price__info-text">10 ноября</p>
+                  </div>
+                  <div class="price__info-item">
+                    <p class="price__info-text">Паспорт от 8 до 14 дней</p>
+                    <p class="price__info-text">26 ноября</p>
+                  </div>
+                  <div class="price__info-item">
+                    <p class="price__info-text">Паспорт от 15 до 29 дней</p>
+                    <p class="price__info-text">10 декабря</p>
+                  </div>
+                  <div class="price__info-item">
+                    <p class="price__info-text">Паспорт от 30 дней</p>
+                    <p class="price__info-text">10 декабря</p>
+                  </div>
+                </div>
+              </div>
+              <div class="price__benefit">
+                <div class="price__benefit-top">
+                  <h3 class="price__benefit-title">Преимущества</h3>
+                </div>
+                <div class="price__benefit-content">
+                  <p class="price__benefit-text">
+                    Гарантия правильного оформления документов
+                  </p>
+                  <p class="price__benefit-text">
+                    Сдача документов без очереди
+                  </p>
+                  <p class="price__benefit-text">
+                    Получение паспорта без очередей
+                  </p>
+                  <p class="price__benefit-text">
+                    Индивидуальный подход в любой ситуации
+                  </p>
+                  <p class="price__benefit-text">Гарантия получения в срок*</p>
+                </div>
+              </div>
+            </div>
+            <div class="price__design">
+              <h3 class="price__design-title">Стоимость оформления</h3>
+              <div class="price__design-cost cost">
+                <h5 class="cost__title">От 9 500 рублей</h5>
+                <p class="cost__subtitle">Гарантия низкой цены!</p>
+              </div>
+              <a class="price__design-link" href="#0"
+                >Рассчитать стоимость для меня</a
+              >
+            </div>
+            <div class="price__descr">
+              <p class="price__descr-text">
+                * Ориентировочная дата готовности при подаче сегодня до 16:00
+              </p>
+              <p class="price__descr-text">
+                ** День подачи и получения в ФМС входят в сроки изготовления
+                (при отсутствии официальных причин задержек)
+              </p>
+              <p class="price__descr-text">
+                *** Пошлина 5000 рублей оплачивается отдельно
+              </p>
+            </div>
+          </div>
+          <div class="price__content" id="tab-2">
+            <div class="price__top">
+              <div class="price__info">
+                <div class="price__info-top">
+                  <h5 class="price__info-title">
+                    Биометрический, нового образца
+                  </h5>
+                  <h5 class="price__info-title">Дата получения*</h5>
+                </div>
+                <div class="price__info-content">
+                  <div class="price__info-item">
+                    <p class="price__info-text">Паспорт от 3 до 7 дней</p>
+                    <p class="price__info-text">10 октября</p>
+                  </div>
+                  <div class="price__info-item">
+                    <p class="price__info-text">Паспорт от 8 до 14 дней</p>
+                    <p class="price__info-text">26 октября</p>
+                  </div>
+                  <div class="price__info-item">
+                    <p class="price__info-text">Паспорт от 15 до 29 дней</p>
+                    <p class="price__info-text">10 ноября</p>
+                  </div>
+                  <div class="price__info-item">
+                    <p class="price__info-text">Паспорт от 30 дней</p>
+                    <p class="price__info-text">10 ноября</p>
+                  </div>
+                </div>
+              </div>
+              <div class="price__benefit">
+                <div class="price__benefit-top">
+                  <h5 class="price__benefit-title">Преимущества</h5>
+                </div>
+                <div class="price__benefit-content">
+                  <p class="price__benefit-text">
+                    Гарантия правильного оформления документов
+                  </p>
+                  <p class="price__benefit-text">
+                    Сдача документов без очереди
+                  </p>
+                  <p class="price__benefit-text">
+                    Получение паспорта без очередей
+                  </p>
+                  <p class="price__benefit-text">
+                    Индивидуальный подход в любой ситуации
+                  </p>
+                  <p class="price__benefit-text">Гарантия получения в срок*</p>
+                </div>
+              </div>
+            </div>
+            <div class="price__design">
+              <h5 class="price__design-title">Стоимость оформления</h5>
+              <div class="price__design-cost cost">
+                <h5 class="cost__title">От 7 500 рублей</h5>
+                <p class="cost__subtitle">Гарантия низкой цены!</p>
+              </div>
+              <a class="price__design-link" href="#0"
+                >Рассчитать стоимость для меня</a
+              >
+            </div>
+            <div class="price__descr">
+              <p class="price__descr-text">
+                * Ориентировочная дата готовности при подаче сегодня до 16:00
+              </p>
+              <p class="price__descr-text">
+                ** День подачи и получения в ФМС входят в сроки изготовления
+                (при отсутствии официальных причин задержек)
+              </p>
+              <p class="price__descr-text">
+                *** Пошлина 5000 рублей оплачивается отдельно
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="price__content price__content--active" id="tab-1">
-          <div class="price__top">
-            <div class="price__info">
-              <div class="price__info-top">
-                <h3 class="price__info-title">
-                  Биометрический, нового образца
+      </section>
+      <section
+        class="deadlines"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000">
+        <div class="container">
+          <div class="deadlines__inner">
+            <div
+              class="deadlines__content"
+              data-aos="fade-right"
+              data-aos-duration="1000">
+              <h2 class="deadlines__content-title">
+                Получить заграничный паспорт на следующий день
+              </h2>
+              <p class="deadlines__content-text">
+                Мы гарантируем сроки не устно, у нас все официально прописано в
+                договоре, дата получения загранпаспорта является его
+                неотъемлемой частью.
+              </p>
+              <a class="deadlines__content-link" href="#0"
+                >Подробнее о нашей компании</a
+              >
+              <p class="deadlines__content-descr">
+                Перед оформлением в другой компании проверьте наличие четких
+                сроков в договоре, отсутствии скрытых дат и переносов сроков.
+              </p>
+            </div>
+            <img
+              class="deadlines__img"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              src="images/deadlines-img.webp"
+              alt="Картинка договора" />
+          </div>
+        </div>
+      </section>
+      <section
+        class="design"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000">
+        <div class="container">
+          <div class="design__content">
+            <h2 class="title">Оформление в 3 шага</h2>
+            <p class="design__descr">займет не больше 1 часа вашего времени</p>
+            <div class="design__items">
+              <div
+                class="design__item"
+                data-aos="fade-left"
+                data-aos-duration="1000">
+                <div class="design__item-box design__item-box--one">
+                  <h3 class="design__item-heading">Оформление в офисе</h3>
+                  <span class="design__item-time">ДО 20 МИНУТ</span>
+                </div>
+                <p class="design__item-text">
+                  Вы приезжаете к нам в офис. Вместе выбираем срок получения
+                  загранпаспорта и отделение МФЦ. За вас может приехать курьер.
+                  Госпошлину оплатить можем мы.
+                </p>
+                <a class="design__item-link" href="tel:88004443636"
+                  >Записаться на подачу документов</a
+                >
+              </div>
+              <div
+                class="design__item"
+                data-aos="fade-left"
+                data-aos-duration="1500">
+                <div class="design__item-box design__item-box--two">
+                  <h3 class="design__item-heading">Подача документов</h3>
+                  <span class="design__item-time">ДО 20 МИНУТ</span>
+                </div>
+                <p class="design__item-text">
+                  На следующий день вы лично приезжаете в МФЦ на подпись
+                  документов, снятие отпечатков и фотографирование. Ваше
+                  присутствие обязательно.
+                </p>
+                <a class="design__item-link" href="tel:88004443636"
+                  >Записаться на подачу документов</a
+                >
+              </div>
+              <div
+                class="design__item"
+                data-aos="fade-left"
+                data-aos-duration="2000">
+                <div class="design__item-box design__item-box--three">
+                  <h3 class="design__item-heading">Получение загранпаспорта</h3>
+                  <span class="design__item-time">ДО 20 МИНУТ</span>
+                </div>
+                <p class="design__item-text">
+                  Вы получаете загранпаспорт в МФЦ в назначенное время, без
+                  задержек и в срок. Уведомляем о его готовности.
+                </p>
+                <a class="design__item-link" href="tel:88004443636"
+                  >Записаться на подачу документов</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="design__guarantee">
+            <div class="design__guarantee-inner">
+              <div class="design__guarantee-content">
+                <h3 class="design__guarantee-title">
+                  Даем гарантия на правильно подготовленный пакет документов на
+                  заграничный паспорт
                 </h3>
-                <h3 class="price__info-title">Дата получения*</h3>
-              </div>
-              <div class="price__info-content">
-                <div class="price__info-item">
-                  <p class="price__info-text">Паспорт от 3 до 7 дней</p>
-                  <p class="price__info-text">10 ноября</p>
-                </div>
-                <div class="price__info-item">
-                  <p class="price__info-text">Паспорт от 8 до 14 дней</p>
-                  <p class="price__info-text">26 ноября</p>
-                </div>
-                <div class="price__info-item">
-                  <p class="price__info-text">Паспорт от 15 до 29 дней</p>
-                  <p class="price__info-text">10 декабря</p>
-                </div>
-                <div class="price__info-item">
-                  <p class="price__info-text">Паспорт от 30 дней</p>
-                  <p class="price__info-text">10 декабря</p>
-                </div>
+                <p class="design__guarantee-text">
+                  Мы оформляем документы для более чем 5000 человек в год.
+                  Собираем десятки пакетов документов каждый день. Благодаря
+                  нашему опыту 99,7 % клиентов получают паспорта вовремя и без
+                  лишних усилий.
+                </p>
+                <p class="design__guarantee-text">
+                  Поэтому мы гарантируем качество наших услуг: грамотную
+                  подготовку документов, запись в назначенный день и время на
+                  подачу документов. Мы понимаем ваши опасения, поэтому эти
+                  обязательства прописываем в договоре.
+                </p>
               </div>
             </div>
-            <div class="price__benefit">
-              <div class="price__benefit-top">
-                <h3 class="price__benefit-title">Преимущества</h3>
-              </div>
-              <div class="price__benefit-content">
-                <p class="price__benefit-text">
-                  Гарантия правильного оформления документов
-                </p>
-                <p class="price__benefit-text">Сдача документов без очереди</p>
-                <p class="price__benefit-text">
-                  Получение паспорта без очередей
-                </p>
-                <p class="price__benefit-text">
-                  Индивидуальный подход в любой ситуации
-                </p>
-                <p class="price__benefit-text">Гарантия получения в срок*</p>
-              </div>
-            </div>
-          </div>
-          <div class="price__design">
-            <h3 class="price__design-title">Стоимость оформления</h3>
-            <div class="price__design-cost cost">
-              <h5 class="cost__title">От 9 500 рублей</h5>
-              <p class="cost__subtitle">Гарантия низкой цены!</p>
-            </div>
-            <a class="price__design-link" href="#0"
-              >Рассчитать стоимость для меня</a
-            >
-          </div>
-          <div class="price__descr">
-            <p class="price__descr-text">
-              * Ориентировочная дата готовности при подаче сегодня до 16:00
-            </p>
-            <p class="price__descr-text">
-              ** День подачи и получения в ФМС входят в сроки изготовления (при
-              отсутствии официальных причин задержек)
-            </p>
-            <p class="price__descr-text">
-              *** Пошлина 5000 рублей оплачивается отдельно
-            </p>
           </div>
         </div>
-        <div class="price__content" id="tab-2">
-          <div class="price__top">
-            <div class="price__info">
-              <div class="price__info-top">
-                <h5 class="price__info-title">
-                  Биометрический, нового образца
-                </h5>
-                <h5 class="price__info-title">Дата получения*</h5>
-              </div>
-              <div class="price__info-content">
-                <div class="price__info-item">
-                  <p class="price__info-text">Паспорт от 3 до 7 дней</p>
-                  <p class="price__info-text">10 октября</p>
-                </div>
-                <div class="price__info-item">
-                  <p class="price__info-text">Паспорт от 8 до 14 дней</p>
-                  <p class="price__info-text">26 октября</p>
-                </div>
-                <div class="price__info-item">
-                  <p class="price__info-text">Паспорт от 15 до 29 дней</p>
-                  <p class="price__info-text">10 ноября</p>
-                </div>
-                <div class="price__info-item">
-                  <p class="price__info-text">Паспорт от 30 дней</p>
-                  <p class="price__info-text">10 ноября</p>
-                </div>
-              </div>
-            </div>
-            <div class="price__benefit">
-              <div class="price__benefit-top">
-                <h5 class="price__benefit-title">Преимущества</h5>
-              </div>
-              <div class="price__benefit-content">
-                <p class="price__benefit-text">
-                  Гарантия правильного оформления документов
+      </section>
+      <section
+        class="questions"
+        id="questions"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000">
+        <div class="container">
+          <div class="questions__inner">
+            <div class="questions__content one-open">
+              <h2 class="title">Ответы на вопросы</h2>
+              <div
+                class="questions__item"
+                data-aos="fade-right"
+                data-aos-duration="500">
+                <h3 class="questions__item-title">
+                  В каких случаях мне откажут в срочном оформлении?
+                </h3>
+                <p class="questions__item-text">
+                  Существует несколько причин, в которых госорганы могут
+                  отклонить заявление на выдачу заграничного паспорта РФ. Полный
+                  перечень причин изложен в статье 15 Федерального закона “О
+                  порядке выезда из Российской Федерации и въезда в Российскую
+                  Федерацию”.
                 </p>
-                <p class="price__benefit-text">Сдача документов без очереди</p>
-                <p class="price__benefit-text">
-                  Получение паспорта без очередей
-                </p>
-                <p class="price__benefit-text">
-                  Индивидуальный подход в любой ситуации
-                </p>
-                <p class="price__benefit-text">Гарантия получения в срок*</p>
               </div>
+              <div
+                class="questions__item"
+                data-aos="fade-right"
+                data-aos-duration="1000">
+                <h3 class="questions__item-title">
+                  У меня нет московской регистрации, это проблема?
+                </h3>
+                <p class="questions__item-text">
+                  Существует несколько причин, в которых госорганы могут
+                  отклонить заявление на выдачу заграничного паспорта РФ. Полный
+                  перечень причин изложен в статье 15 Федерального закона “О
+                  порядке выезда из Российской Федерации и въезда в Российскую
+                  Федерацию”.
+                </p>
+              </div>
+              <div
+                class="questions__item"
+                data-aos="fade-right"
+                data-aos-duration="1500">
+                <h3 class="questions__item-title">
+                  В какое отделение нужно будет ехать на подачу?
+                </h3>
+                <p class="questions__item-text">
+                  Где есть прописка — в подразделении, которое обслуживает адрес
+                  вашего места жительства Где живёте, но нет прописки — в
+                  подразделении, которое обслуживает адрес, где вы живёте, но не
+                  имеете постоянной или временной регистрации Где временно
+                  зарегистрированы — в подразделении, которое обслуживает адрес
+                  временной регистрации
+                </p>
+              </div>
+              <div
+                class="questions__item"
+                data-aos="fade-right"
+                data-aos-duration="1500">
+                <h3 class="questions__item-title">Что включено в стоимость?</h3>
+                <p class="questions__item-text">
+                  Существует несколько причин, в которых госорганы могут
+                  отклонить заявление на выдачу заграничного паспорта РФ. Полный
+                  перечень причин изложен в статье 15 Федерального закона “О
+                  порядке выезда из Российской Федерации и въезда в Российскую
+                  Федерацию”.
+                </p>
+              </div>
+              <div
+                class="questions__item"
+                data-aos="fade-right"
+                data-aos-duration="1500">
+                <h3 class="questions__item-title">
+                  Влияют ли на выдачу загранпаспорта неоплаченные долги?
+                </h3>
+                <p class="questions__item-text">
+                  Существует несколько причин, в которых госорганы могут
+                  отклонить заявление на выдачу заграничного паспорта РФ. Полный
+                  перечень причин изложен в статье 15 Федерального закона “О
+                  порядке выезда из Российской Федерации и въезда в Российскую
+                  Федерацию”.
+                </p>
+              </div>
+              <a class="questions__link" href="#0">Задать свой вопрос</a>
             </div>
-          </div>
-          <div class="price__design">
-            <h5 class="price__design-title">Стоимость оформления</h5>
-            <div class="price__design-cost cost">
-              <h5 class="cost__title">От 7 500 рублей</h5>
-              <p class="cost__subtitle">Гарантия низкой цены!</p>
+            <div class="questions__person">
+              <img
+                class="questions__person-img"
+                src="images/person-img.webp"
+                alt="Фотография менеджера" />
+              <p class="questions__person-name">Отвечает Марина Павлова</p>
+              <p class="questions__person-position">менеджер по оформлению</p>
             </div>
-            <a class="price__design-link" href="#0"
-              >Рассчитать стоимость для меня</a
-            >
-          </div>
-          <div class="price__descr">
-            <p class="price__descr-text">
-              * Ориентировочная дата готовности при подаче сегодня до 16:00
-            </p>
-            <p class="price__descr-text">
-              ** День подачи и получения в ФМС входят в сроки изготовления (при
-              отсутствии официальных причин задержек)
-            </p>
-            <p class="price__descr-text">
-              *** Пошлина 5000 рублей оплачивается отдельно
-            </p>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="deadlines">
-      <div class="container">
-        <div class="deadlines__inner">
-          <div class="deadlines__content">
-            <h2 class="deadlines__content-title">
-              Получить заграничный паспорт на следующий день
-            </h2>
-            <p class="deadlines__content-text">
-              Мы гарантируем сроки не устно, у нас все официально прописано в
-              договоре, дата получения загранпаспорта является его неотъемлемой
-              частью.
-            </p>
-            <a class="deadlines__content-link" href="#0"
-              >Подробнее о нашей компании</a
-            >
-            <p class="deadlines__content-descr">
-              Перед оформлением в другой компании проверьте наличие четких
-              сроков в договоре, отсутствии скрытых дат и переносов сроков.
-            </p>
-          </div>
-          <img
-            class="deadlines__img"
-            src="images/deadlines-img.webp"
-            alt="Картинка договора" />
-        </div>
-      </div>
-    </section>
-    <section class="design">
-      <div class="container">
-        <div class="design__content">
-          <h2 class="title">Оформление в 3 шага</h2>
-          <p class="design__descr">займет не больше 1 часа вашего времени</p>
-          <div class="design__items">
-            <div class="design__item">
-              <div class="design__item-box design__item-box--one">
-                <h3 class="design__item-heading">Оформление в офисе</h3>
-                <span class="design__item-time">ДО 20 МИНУТ</span>
-              </div>
-              <p class="design__item-text">
-                Вы приезжаете к нам в офис. Вместе выбираем срок получения
-                загранпаспорта и отделение МФЦ. За вас может приехать курьер.
-                Госпошлину оплатить можем мы.
-              </p>
-              <a class="design__item-link" href="tel:88004443636"
-                >Записаться на подачу документов</a
-              >
+      </section>
+      <section
+        class="social"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000">
+        <div class="container">
+          <div class="social__inner">
+            <div
+              class="social__inst"
+              class="deadlines__content"
+              data-aos="fade-right"
+              data-aos-duration="1000">
+              <h2 class="title">
+                Следите за нами в
+                <span class="select">Instagram</span>
+              </h2>
+              <img
+                class="social__inst-img"
+                src="images/social-section/social-inst.jpg"
+                alt="Наш инстаграм" />
             </div>
-            <div class="design__item">
-              <div class="design__item-box design__item-box--two">
-                <h3 class="design__item-heading">Подача документов</h3>
-                <span class="design__item-time">ДО 20 МИНУТ</span>
-              </div>
-              <p class="design__item-text">
-                На следующий день вы лично приезжаете в МФЦ на подпись
-                документов, снятие отпечатков и фотографирование. Ваше
-                присутствие обязательно.
-              </p>
-              <a class="design__item-link" href="tel:88004443636"
-                >Записаться на подачу документов</a
-              >
-            </div>
-            <div class="design__item">
-              <div class="design__item-box design__item-box--three">
-                <h3 class="design__item-heading">Получение загранпаспорта</h3>
-                <span class="design__item-time">ДО 20 МИНУТ</span>
-              </div>
-              <p class="design__item-text">
-                Вы получаете загранпаспорт в МФЦ в назначенное время, без
-                задержек и в срок. Уведомляем о его готовности.
-              </p>
-              <a class="design__item-link" href="tel:88004443636"
-                >Записаться на подачу документов</a
+            <div
+              class="social__vk"
+              class="deadlines__content"
+              data-aos="fade-left"
+              data-aos-duration="1000">
+              <h3 class="social__vk-title">
+                Более 2000 комментариев в блоке
+                <span class="select">Вопрос-ответ</span>
+              </h3>
+              <img
+                class="social__vk-img"
+                src="images/social-section/social-vk.jpg"
+                alt="Наш ВК" />
+              <a class="social__vk-link" href="#0">
+                <img
+                  class="social__vk-icon"
+                  src="images/icon/social-vk.svg"
+                  alt="Иконка ВК" />
+                <p class="social__vk-descr">
+                  Больше полезного в нашем сообществе
+                </p></a
               >
             </div>
           </div>
         </div>
-        <div class="design__guarantee">
-          <div class="design__guarantee-inner">
-            <div class="design__guarantee-content">
-              <h3 class="design__guarantee-title">
-                Даем гарантия на правильно подготовленный пакет документов на
-                заграничный паспорт
-              </h3>
-              <p class="design__guarantee-text">
-                Мы оформляем документы для более чем 5000 человек в год.
-                Собираем десятки пакетов документов каждый день. Благодаря
-                нашему опыту 99,7 % клиентов получают паспорта вовремя и без
-                лишних усилий.
-              </p>
-              <p class="design__guarantee-text">
-                Поэтому мы гарантируем качество наших услуг: грамотную
-                подготовку документов, запись в назначенный день и время на
-                подачу документов. Мы понимаем ваши опасения, поэтому эти
-                обязательства прописываем в договоре.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="questions">
-      <div class="container">
-        <div class="questions__inner">
-          <div class="questions__content one-open">
-            <h2 class="title">Ответы на вопросы</h2>
-            <div class="questions__item">
-              <h3 class="questions__item-title">
-                В каких случаях мне откажут в срочном оформлении?
-              </h3>
-              <p class="questions__item-text">
-                Существует несколько причин, в которых госорганы могут отклонить
-                заявление на выдачу заграничного паспорта РФ. Полный перечень
-                причин изложен в статье 15 Федерального закона “О порядке выезда
-                из Российской Федерации и въезда в Российскую Федерацию”.
-              </p>
-            </div>
-            <div class="questions__item">
-              <h3 class="questions__item-title">
-                У меня нет московской регистрации, это проблема?
-              </h3>
-              <p class="questions__item-text">
-                Существует несколько причин, в которых госорганы могут отклонить
-                заявление на выдачу заграничного паспорта РФ. Полный перечень
-                причин изложен в статье 15 Федерального закона “О порядке выезда
-                из Российской Федерации и въезда в Российскую Федерацию”.
-              </p>
-            </div>
-            <div class="questions__item">
-              <h3 class="questions__item-title">
-                В какое отделение нужно будет ехать на подачу?
-              </h3>
-              <p class="questions__item-text">
-                Где есть прописка — в подразделении, которое обслуживает адрес
-                вашего места жительства Где живёте, но нет прописки — в
-                подразделении, которое обслуживает адрес, где вы живёте, но не
-                имеете постоянной или временной регистрации Где временно
-                зарегистрированы — в подразделении, которое обслуживает адрес
-                временной регистрации
-              </p>
-            </div>
-            <div class="questions__item">
-              <h3 class="questions__item-title">Что включено в стоимость?</h3>
-              <p class="questions__item-text">
-                Существует несколько причин, в которых госорганы могут отклонить
-                заявление на выдачу заграничного паспорта РФ. Полный перечень
-                причин изложен в статье 15 Федерального закона “О порядке выезда
-                из Российской Федерации и въезда в Российскую Федерацию”.
-              </p>
-            </div>
-            <div class="questions__item">
-              <h3 class="questions__item-title">
-                Влияют ли на выдачу загранпаспорта неоплаченные долги?
-              </h3>
-              <p class="questions__item-text">
-                Существует несколько причин, в которых госорганы могут отклонить
-                заявление на выдачу заграничного паспорта РФ. Полный перечень
-                причин изложен в статье 15 Федерального закона “О порядке выезда
-                из Российской Федерации и въезда в Российскую Федерацию”.
-              </p>
-            </div>
-            <a class="questions__link" href="#0">Задать свой вопрос</a>
-          </div>
-          <div class="questions__person">
-            <img
-              class="questions__person-img"
-              src="images/person-img.webp"
-              alt="Фотография менеджера" />
-            <p class="questions__person-name">Отвечает Марина Павлова</p>
-            <p class="questions__person-position">менеджер по оформлению</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="social">
-      <div class="container">
-        <div class="social__inner">
-          <div class="social__inst">
-            <h2 class="title">
-              Следите за нами в
-              <span class="select">Instagram</span>
-            </h2>
-            <img
-              class="social__inst-img"
-              src="images/social-section/social-inst.jpg"
-              alt="Наш инстаграм" />
-          </div>
-          <div class="social__vk">
-            <h3 class="social__vk-title">
-              Более 2000 комментариев в блоке
-              <span class="select">Вопрос-ответ</span>
-            </h3>
-            <img
-              class="social__vk-img"
-              src="images/social-section/social-vk.jpg"
-              alt="Наш ВК" />
-            <a class="social__vk-link" href="#0">
-              <img
-                class="social__vk-icon"
-                src="images/icon/social-vk.svg"
-                alt="Иконка ВК" />
-              <p class="social__vk-descr">
-                Больше полезного в нашем сообществе
-              </p></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="reviews">
-      <div class="container">
-        <h2 class="title">Читайте реальные отзывы от наших клиентов</h2>
-        <div class="comments">
-          <div class="comments__inner">
-            <div class="comments__item">
-              <div class="comments__info">
-                <div class="comments__person">
-                  <img
-                    class="comments__person-avatar"
-                    src="images/avatar/avatar-1.jpg"
-                    alt="Аватарка" />
-                  <img
-                    class="comments__person-social"
-                    src="images/icon/social-facebook.svg"
-                    alt="Ссылка на Фейсбук" />
+      </section>
+      <section
+        class="reviews"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000">
+        <div class="container">
+          <h2 class="title">Читайте реальные отзывы от наших клиентов</h2>
+          <div class="comments" data-aos="fade-left" data-aos-duration="1000">
+            <div class="comments__inner">
+              <div class="comments__item">
+                <div class="comments__info">
+                  <div class="comments__person">
+                    <img
+                      class="comments__person-avatar"
+                      src="images/avatar/avatar-1.jpg"
+                      alt="Аватарка" />
+                    <img
+                      class="comments__person-social"
+                      src="images/icon/social-facebook.svg"
+                      alt="Ссылка на Фейсбук" />
+                  </div>
+                  <div class="comments__info-content">
+                    <span class="comments__info-name">Ольга Сонина</span>
+                    <span class="comments__info-time">28.02.2020 в 09:11</span>
+                  </div>
                 </div>
-                <div class="comments__info-content">
-                  <span class="comments__info-name">Ольга Сонина</span>
-                  <span class="comments__info-time">28.02.2020 в 09:11</span>
-                </div>
+                <p class="comments__text">
+                  Сделали мне и детям загранники в кратчайшие сроки. Вежливый
+                  персонал, очень внимательны к посетителям. Остались только
+                  положительные эмоции при обращении в эту компанию! Спасибо
+                </p>
               </div>
-              <p class="comments__text">
-                Сделали мне и детям загранники в кратчайшие сроки. Вежливый
-                персонал, очень внимательны к посетителям. Остались только
-                положительные эмоции при обращении в эту компанию! Спасибо
-              </p>
-            </div>
-            <div class="comments__item">
-              <div class="comments__info">
-                <div class="comments__person">
-                  <img
-                    class="comments__person-avatar"
-                    src="images/avatar/avatar-2.jpg"
-                    alt="Аватарка" />
-                  <img
-                    class="comments__person-social"
-                    src="images/icon/social-vk.svg"
-                    alt="Ссылка на Фейсбук" />
+              <div class="comments__item">
+                <div class="comments__info">
+                  <div class="comments__person">
+                    <img
+                      class="comments__person-avatar"
+                      src="images/avatar/avatar-2.jpg"
+                      alt="Аватарка" />
+                    <img
+                      class="comments__person-social"
+                      src="images/icon/social-vk.svg"
+                      alt="Ссылка на Фейсбук" />
+                  </div>
+                  <div class="comments__info-content">
+                    <span class="comments__info-name">Руслан Мацьолек</span>
+                    <span class="comments__info-time">17.02.2020 в 09:11</span>
+                  </div>
                 </div>
-                <div class="comments__info-content">
-                  <span class="comments__info-name">Руслан Мацьолек</span>
-                  <span class="comments__info-time">17.02.2020 в 09:11</span>
-                </div>
+                <p class="comments__text">
+                  Буквально перед заходом на дом2 утерял свой загран ( а я могу
+                  :( ) . Через гос услуги сказали больше месяца ждать,так же
+                  говорили , что желательно по месту регистрации.
+                </p>
               </div>
-              <p class="comments__text">
-                Буквально перед заходом на дом2 утерял свой загран ( а я могу :(
-                ) . Через гос услуги сказали больше месяца ждать,так же говорили
-                , что желательно по месту регистрации.
-              </p>
-            </div>
-            <div class="comments__item">
-              <div class="comments__info">
-                <div class="comments__person">
-                  <img
-                    class="comments__person-avatar"
-                    src="images/avatar/avatar-3.jpg"
-                    alt="Аватарка" />
-                  <img
-                    class="comments__person-social"
-                    src="images/icon/social-inst.svg"
-                    alt="Ссылка на Фейсбук" />
+              <div class="comments__item">
+                <div class="comments__info">
+                  <div class="comments__person">
+                    <img
+                      class="comments__person-avatar"
+                      src="images/avatar/avatar-3.jpg"
+                      alt="Аватарка" />
+                    <img
+                      class="comments__person-social"
+                      src="images/icon/social-inst.svg"
+                      alt="Ссылка на Фейсбук" />
+                  </div>
+                  <div class="comments__info-content">
+                    <span class="comments__info-name">Анжела Говорова</span>
+                    <span class="comments__info-time">28.02.2020 в 09:11</span>
+                  </div>
                 </div>
-                <div class="comments__info-content">
-                  <span class="comments__info-name">Анжела Говорова</span>
-                  <span class="comments__info-time">28.02.2020 в 09:11</span>
-                </div>
+                <p class="comments__text">
+                  Я нашла нереальный тур в ОАЭ , начала его оформлять и после
+                  оплаты узнала , что вписанный ребёнок в паспорт не достукается
+                  в страну . У каждого ребёнка должен был быть свой паспорт.
+                </p>
               </div>
-              <p class="comments__text">
-                Я нашла нереальный тур в ОАЭ , начала его оформлять и после
-                оплаты узнала , что вписанный ребёнок в паспорт не достукается в
-                страну . У каждого ребёнка должен был быть свой паспорт.
-              </p>
+            </div>
+          </div>
+          <div class="photo" data-aos="fade-left" data-aos-duration="1000">
+            <div class="photo__inner">
+              <div class="photo__item">
+                <img
+                  class="photo__img"
+                  src="images/slider-reviews/item-1.jpg"
+                  alt="Картинка слайдов" />
+              </div>
+              <div class="photo__item">
+                <img
+                  class="photo__img"
+                  src="images/slider-reviews/item-2.jpg"
+                  alt="Картинка слайдов" />
+              </div>
+              <div class="photo__item">
+                <img
+                  class="photo__img"
+                  src="images/slider-reviews/item-3.jpg"
+                  alt="Картинка слайдов" />
+              </div>
+              <div class="photo__item">
+                <img
+                  class="photo__img"
+                  src="images/slider-reviews/item-4.jpg"
+                  alt="Картинка слайдов" />
+              </div>
+              <div class="photo__item">
+                <img
+                  class="photo__img"
+                  src="images/slider-reviews/item-5.jpg"
+                  alt="Картинка слайдов" />
+              </div>
+              <div class="photo__item">
+                <img
+                  class="photo__img"
+                  src="images/slider-reviews/item-6.jpg"
+                  alt="Картинка слайдов" />
+              </div>
             </div>
           </div>
         </div>
-        <div class="photo">
-          <div class="photo__inner">
-            <div class="photo__item">
-              <img
-                class="photo__img"
-                src="images/slider-reviews/item-1.jpg"
-                alt="Картинка слайдов" />
+      </section>
+      <section
+        class="card"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000">
+        <div class="container">
+          <div class="card__inner">
+            <div
+              class="card__content"
+              data-aos="fade-right"
+              data-aos-duration="1000">
+              <h2 class="title">
+                Получите <span class="select">карту постоянного клиента</span>
+                Группы компаний
+              </h2>
+              <p class="card__text">
+                Картой могут пользоваться друзья и родственники.
+              </p>
+              <div class="card__benefits">
+                <h3 class="card__benefits-title">Карта дает:</h3>
+                <p class="card__benefits-text">
+                  Скидки на оформление виз и загранпаспортов
+                </p>
+                <p class="card__benefits-text">
+                  Специальные условия для ваших коллег
+                </p>
+                <p class="card__benefits-text">Скидки на туры</p>
+              </div>
+              <a class="card__link" href="#0">Забронировать карту</a>
             </div>
-            <div class="photo__item">
-              <img
-                class="photo__img"
-                src="images/slider-reviews/item-2.jpg"
-                alt="Картинка слайдов" />
-            </div>
-            <div class="photo__item">
-              <img
-                class="photo__img"
-                src="images/slider-reviews/item-3.jpg"
-                alt="Картинка слайдов" />
-            </div>
-            <div class="photo__item">
-              <img
-                class="photo__img"
-                src="images/slider-reviews/item-4.jpg"
-                alt="Картинка слайдов" />
-            </div>
-            <div class="photo__item">
-              <img
-                class="photo__img"
-                src="images/slider-reviews/item-5.jpg"
-                alt="Картинка слайдов" />
-            </div>
-            <div class="photo__item">
-              <img
-                class="photo__img"
-                src="images/slider-reviews/item-6.jpg"
-                alt="Картинка слайдов" />
-            </div>
+            <img
+              class="card__img"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              src="images/card-img.jpg"
+              alt="Подарочная карта" />
           </div>
         </div>
-      </div>
-    </section>
-    <section class="card">
-      <div class="container">
-        <div class="card__inner">
-          <div class="card__content">
-            <h2 class="title">
-              Получите <span class="select">карту постоянного клиента</span>
-              Группы компаний
-            </h2>
-            <p class="card__text">
-              Картой могут пользоваться друзья и родственники.
-            </p>
-            <div class="card__benefits">
-              <h3 class="card__benefits-title">Карта дает:</h3>
-              <p class="card__benefits-text">
-                Скидки на оформление виз и загранпаспортов
-              </p>
-              <p class="card__benefits-text">
-                Специальные условия для ваших коллег
-              </p>
-              <p class="card__benefits-text">Скидки на туры</p>
-            </div>
-            <a class="card__link" href="#0">Забронировать карту</a>
-          </div>
-          <img
-            class="card__img"
-            src="images/card-img.jpg"
-            alt="Подарочная карта" />
-        </div>
-      </div>
-    </section>
-    <section class="contact">
-      <div class="container">
-        <div class="contact__card">
-          <div class="contact__adress">
-            <a class="contact__link" href="#0">
-              <h3 class="contact__title">г. Москва</h3>
-              <p class="contact__text">ул. Воронцовская, 20</p>
-            </a>
-          </div>
-          <div class="contact__phone">
-            <div class="contact__box">
-              <a class="contact__link" href="tel:84996419052">
-                <h3 class="contact__title">8 (499) 641 90 52</h3>
-                <p class="contact__text">Для Москвы и МО</p>
+      </section>
+      <section class="contact" id="contact">
+        <div class="container">
+          <div
+            class="contact__card"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1000">
+            <div class="contact__adress">
+              <a class="contact__link" href="#0">
+                <h3 class="contact__title">г. Москва</h3>
+                <p class="contact__text">ул. Воронцовская, 20</p>
               </a>
             </div>
-            <div class="contact__box">
-              <a class="contact__link" href="tel:88004443636">
-                <h3 class="contact__title">8 (800) 444 36 36</h3>
-                <p class="contact__text">Для регионов РФ</p>
+            <div class="contact__phone">
+              <div class="contact__box">
+                <a class="contact__link" href="tel:84996419052">
+                  <h3 class="contact__title">8 (499) 641 90 52</h3>
+                  <p class="contact__text">Для Москвы и МО</p>
+                </a>
+              </div>
+              <div class="contact__box">
+                <a class="contact__link" href="tel:88004443636">
+                  <h3 class="contact__title">8 (800) 444 36 36</h3>
+                  <p class="contact__text">Для регионов РФ</p>
+                </a>
+              </div>
+            </div>
+            <div class="contact__timetable">
+              <p class="contact__timetable-text">
+                Будни с 09:00 до 21:00 Суббота с 10:00 до 19:00 Воскресенье
+                выходной
+              </p>
+            </div>
+            <div class="contact__question">
+              <p class="contact__question-text">Задавайте вопросы!</p>
+            </div>
+            <div class="contact__social">
+              <a class="contact__social-link" href="#0">
+                <img
+                  class="contact__social-img"
+                  src="images/icon/social-facebook.svg"
+                  alt="Фейсбук" />
+              </a>
+              <a class="contact__social-link" href="#0">
+                <img
+                  class="contact__social-img"
+                  src="images/icon/social-vk.svg"
+                  alt="ВК" />
+              </a>
+              <a class="contact__social-link" href="#0">
+                <img
+                  class="contact__social-img"
+                  src="images/icon/social-tg.svg"
+                  alt="Телеграмм" />
               </a>
             </div>
           </div>
-          <div class="contact__timetable">
-            <p class="contact__timetable-text">
-              Будни с 09:00 до 21:00 Суббота с 10:00 до 19:00 Воскресенье
-              выходной
-            </p>
-          </div>
-          <div class="contact__question">
-            <p class="contact__question-text">Задавайте вопросы!</p>
-          </div>
-          <div class="contact__social">
-            <a class="contact__social-link" href="#0">
-              <img
-                class="contact__social-img"
-                src="images/icon/social-facebook.svg"
-                alt="Фейсбук" />
-            </a>
-            <a class="contact__social-link" href="#0">
-              <img
-                class="contact__social-img"
-                src="images/icon/social-vk.svg"
-                alt="ВК" />
-            </a>
-            <a class="contact__social-link" href="#0">
-              <img
-                class="contact__social-img"
-                src="images/icon/social-tg.svg"
-                alt="Телеграмм" />
-            </a>
+        </div>
+      </section>
+      <section
+        class="about"
+        id="about"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000">
+        <div class="container">
+          <h2 class="title">Добро пожаловать к нам в офис!</h2>
+          <p class="about__text">
+            С радостью угостим вас чашечкой кофе или чая.
+          </p>
+          <div class="about__items">
+            <img
+              class="about__img"
+              src="images/slider-office/1.jpg"
+              alt="Наш офис" />
+
+            <img
+              class="about__img"
+              src="images/slider-office/2.jpg"
+              alt="Наш офис" />
+
+            <img
+              class="about__img"
+              src="images/slider-office/3.jpg"
+              alt="Наш офис" />
+
+            <img
+              class="about__img"
+              src="images/slider-office/4.jpg"
+              alt="Наш офис" />
           </div>
         </div>
-      </div>
-    </section>
-    <section class="about">
-      <div class="container">
-        <h2 class="title">Добро пожаловать к нам в офис!</h2>
-        <p class="about__text">С радостью угостим вас чашечкой кофе или чая.</p>
-        <div class="about__items">
-          <img
-            class="about__img"
-            src="images/slider-office/1.jpg"
-            alt="Наш офис" />
-
-          <img
-            class="about__img"
-            src="images/slider-office/2.jpg"
-            alt="Наш офис" />
-
-          <img
-            class="about__img"
-            src="images/slider-office/3.jpg"
-            alt="Наш офис" />
-
-          <img
-            class="about__img"
-            src="images/slider-office/4.jpg"
-            alt="Наш офис" />
+      </section>
+      <section
+        class="features"
+        id="features"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000">
+        <div class="container features__container">
+          <h2 class="title">Особенности оформления заграничного паспорта</h2>
+          <p class="features__text">Просто посмотрите видео ниже</p>
         </div>
-      </div>
-    </section>
-    <section class="features">
-      <div class="container features__container">
-        <h2 class="title">Особенности оформления заграничного паспорта</h2>
-        <p class="features__text">Просто посмотрите видео ниже</p>
-      </div>
-      <div class="features__inner">
-        <a
-          class="features__video"
-          data-fancybox
-          data-width="1400"
-          data-height="790"
-          href="video.mp4">
-          <img
-            class="features__video-img"
-            src="images/features-video.jpg"
-            alt="" />
-        </a>
-        <div class="features__content">
-          <h3 class="features__content-title">Образцы бланков и заявлений:</h3>
-          <div class="features__content-sample">
-            <p class="features__content-caption">
+        <div class="features__inner">
+          <a
+            class="features__video"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-fancybox
+            data-width="1400"
+            data-height="790"
+            href="video.mp4">
+            <img
+              class="features__video-img"
+              src="images/features-video.jpg"
+              alt="" />
+          </a>
+          <div
+            class="features__content"
+            data-aos="fade-left"
+            data-aos-duration="1000">
+            <h3 class="features__content-title">
               Образцы бланков и заявлений:
-            </p>
-            <div class="features__content-item">
-              <a
-                class="features__content-link"
-                href="example.pdf"
-                download
-                target="_blank">
-                <img
-                  class="features__content-img"
-                  src="images/icon/icon-pdf.svg"
-                  alt="Скачать pdf" />
-              </a>
-              <p class="features__content-text">
-                Образец заполнения анкеты на загранпаспорт нового образца для
-                взрослых 1
+            </h3>
+            <div class="features__content-sample">
+              <p class="features__content-caption">
+                Образцы бланков и заявлений:
               </p>
+              <div class="features__content-item">
+                <a
+                  class="features__content-link"
+                  href="example.pdf"
+                  download
+                  target="_blank">
+                  <img
+                    class="features__content-img"
+                    src="images/icon/icon-pdf.svg"
+                    alt="Скачать pdf" />
+                </a>
+                <p class="features__content-text">
+                  Образец заполнения анкеты на загранпаспорт нового образца для
+                  взрослых 1
+                </p>
+              </div>
+              <div class="features__content-item">
+                <a
+                  class="features__content-link"
+                  href="example.pdf"
+                  download
+                  target="_blank">
+                  <img
+                    class="features__content-img"
+                    src="images/icon/icon-pdf.svg"
+                    alt="Скачать pdf" />
+                </a>
+                <p class="features__content-text">
+                  Образец заполнения анкеты на загранпаспорт нового образца для
+                  взрослых 2
+                </p>
+              </div>
             </div>
-            <div class="features__content-item">
-              <a
-                class="features__content-link"
-                href="example.pdf"
-                download
-                target="_blank">
-                <img
-                  class="features__content-img"
-                  src="images/icon/icon-pdf.svg"
-                  alt="Скачать pdf" />
-              </a>
-              <p class="features__content-text">
-                Образец заполнения анкеты на загранпаспорт нового образца для
-                взрослых 2
-              </p>
-            </div>
-          </div>
-          <div class="features__content-form">
-            <p class="features__content-caption">Формы:</p>
-            <div class="features__content-item">
-              <a
-                class="features__content-link"
-                href="example.pdf"
-                download
-                target="_blank">
-                <img
-                  class="features__content-img"
-                  src="images/icon/icon-pdf.svg"
-                  alt="Скачать pdf" />
-              </a>
-              <p class="features__content-text">
-                Образец заявления на возврат уплаченной госпошлины на
-                загранпаспорт
-              </p>
-            </div>
-            <div class="features__content-item">
-              <a
-                class="features__content-link"
-                href="example.pdf"
-                download
-                target="_blank">
-                <img
-                  class="features__content-img"
-                  src="images/icon/icon-doc.svg"
-                  alt="Скачать doc" />
-              </a>
-              <p class="features__content-text">
-                Образец заявления на возврат уплаченной госпошлины на
-                загранпаспорт
-              </p>
-            </div>
-            <div class="features__content-item">
-              <a
-                class="features__content-link"
-                href="example.pdf"
-                download
-                target="_blank">
-                <img
-                  class="features__content-img"
-                  src="images/icon/icon-pdf.svg"
-                  alt="Скачать pdf" />
-              </a>
-              <p class="features__content-text">
-                Инструкция по распечатке анкеты на загранпаспорт нового образца
-              </p>
+            <div class="features__content-form">
+              <p class="features__content-caption">Формы:</p>
+              <div class="features__content-item">
+                <a
+                  class="features__content-link"
+                  href="example.pdf"
+                  download
+                  target="_blank">
+                  <img
+                    class="features__content-img"
+                    src="images/icon/icon-pdf.svg"
+                    alt="Скачать pdf" />
+                </a>
+                <p class="features__content-text">
+                  Образец заявления на возврат уплаченной госпошлины на
+                  загранпаспорт
+                </p>
+              </div>
+              <div class="features__content-item">
+                <a
+                  class="features__content-link"
+                  href="example.pdf"
+                  download
+                  target="_blank">
+                  <img
+                    class="features__content-img"
+                    src="images/icon/icon-doc.svg"
+                    alt="Скачать doc" />
+                </a>
+                <p class="features__content-text">
+                  Образец заявления на возврат уплаченной госпошлины на
+                  загранпаспорт
+                </p>
+              </div>
+              <div class="features__content-item">
+                <a
+                  class="features__content-link"
+                  href="example.pdf"
+                  download
+                  target="_blank">
+                  <img
+                    class="features__content-img"
+                    src="images/icon/icon-pdf.svg"
+                    alt="Скачать pdf" />
+                </a>
+                <p class="features__content-text">
+                  Инструкция по распечатке анкеты на загранпаспорт нового
+                  образца
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
@@ -907,10 +1029,10 @@
             </div>
           </div>
           <div class="footer__adress">
-            <div class="footer__adress-local">
+            <address class="footer__adress-local">
               <a class="footer__adress-link" href="#0">г. Москва</a>
               <p class="footer__adress-street">ул. Воронцовская, 20</p>
-            </div>
+            </address>
             <div class="footer__adress-timetable">
               <p class="footer__adress-text">
                 Будни с 09:00 до 21:00 Суббота с 10:00 до 19:00 Воскресенье

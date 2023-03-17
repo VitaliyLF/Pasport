@@ -4,6 +4,55 @@
 @import 'global';
 @import 'libs';
 
+.call {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  right: 65px;
+  bottom: 150px;
+  &__link {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--tel {
+      background-color: $accent;
+      margin-bottom: 10px;
+    }
+    &--text {
+      background-color: $blue;
+    }
+    &:hover {
+      animation: heartbeat 1.5s ease-in-out infinite both;
+      @keyframes heartbeat {
+        from {
+          transform: scale(1);
+          transform-origin: center center;
+          animation-timing-function: ease-out;
+        }
+        10% {
+          transform: scale(0.91);
+          animation-timing-function: ease-in;
+        }
+        17% {
+          transform: scale(0.98);
+          animation-timing-function: ease-out;
+        }
+        33% {
+          transform: scale(0.87);
+          animation-timing-function: ease-in;
+        }
+        45% {
+          transform: scale(1);
+          animation-timing-function: ease-out;
+        }
+      }
+    }
+  }
+}
 .header {
   padding: 15px 0 12px;
   border-bottom: 1px solid rgba(129, 129, 129, 0.4);
@@ -12,10 +61,11 @@
     justify-content: space-between;
     align-items: center;
   }
-  &__contact {
+  &__content {
     display: flex;
+    align-items: center;
   }
-  .user-nav {
+  .info {
     margin-right: 42px;
     &__list {
       display: flex;
@@ -23,45 +73,38 @@
         margin-right: 35px;
       }
     }
-    &__adress {
+    &__item {
       padding-left: 40px;
       position: relative;
       &::after {
         content: '';
         position: absolute;
-        width: 27px;
-        height: 2px;
-        background-color: $accent;
-        top: 10px;
+        background-repeat: no-repeat;
         left: 0;
       }
-    }
-    &__moscow {
-      padding-left: 40px;
-      position: relative;
-      &::after {
-        content: '';
-        position: absolute;
-        width: 31px;
-        height: 37px;
-        background-image: url(../images/icon/icon-moscow.svg);
-        background-repeat: no-repeat;
-        top: 0;
-        left: 0;
+      &--adress {
+        &::after {
+          width: 27px;
+          height: 2px;
+          background-color: $accent;
+          top: 10px;
+        }
       }
-    }
-    &__regions {
-      padding-left: 40px;
-      position: relative;
-      &::after {
-        content: '';
-        position: absolute;
-        width: 33px;
-        height: 37px;
-        background-image: url(../images/icon/icon-region.svg);
-        background-repeat: no-repeat;
-        top: 0;
-        left: 0;
+      &--moscow {
+        &::after {
+          width: 31px;
+          height: 37px;
+          background-image: url(../images/icon/icon-moscow.svg);
+          top: 0;
+        }
+      }
+      &--regions {
+        &::after {
+          width: 33px;
+          height: 37px;
+          background-image: url(../images/icon/icon-region.svg);
+          top: 0;
+        }
       }
     }
     &__content {
@@ -80,6 +123,7 @@
   }
   .user-contact {
     &__link {
+      display: inline-block;
       font-size: 13px;
       line-height: 16px;
       padding: 16px 32px;
@@ -119,6 +163,7 @@
       @extend %Gilroy-Bold;
       &:hover {
         color: $blue;
+        transition: all 0.3s ease;
       }
     }
   }
@@ -140,10 +185,10 @@
     margin-bottom: -50px;
   }
   &__content {
-    max-width: 630px;
     margin-right: 25px;
   }
   &__content-title {
+    max-width: 630px;
     font-size: 46px;
     line-height: 56px;
     @extend %Gilroy-ExtraBold;
@@ -1179,6 +1224,7 @@
     flex-direction: column;
     margin-bottom: 37px;
     padding-left: 26px;
+    font-style: normal;
     position: relative;
     &::before {
       content: '';
