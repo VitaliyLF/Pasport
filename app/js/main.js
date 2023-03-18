@@ -11,6 +11,28 @@ $(function () {
     }
   })
 
+  $('.datepicker-here').datepicker({
+    minDate: new Date(),
+    today: 'Today',
+    todayButton: new Date(),
+    language: {
+      months: [
+        'Января',
+        'Февраля',
+        'Марта',
+        'Апреля',
+        'Мая',
+        'Июня',
+        'Июля',
+        'Августа',
+        'Сентября',
+        'Октября',
+        'Ноября',
+        'Декабря',
+      ],
+    },
+  })
+
   $('.menu__list a').on('click', function (event) {
     event.preventDefault()
     var id = $(this).attr('href'),
