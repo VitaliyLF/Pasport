@@ -40,7 +40,7 @@
               <ul class="info__list">
                 <li class="info__item info__item--adress">
                   <div class="info__content">
-                    <a class="info__link" href="tel:84996419052">г. Москва</a>
+                    <a class="info__link" href="#0">г. Москва</a>
                     <p class="info__text">ул. Воронцовская, 20</p>
                   </div>
                 </li>
@@ -162,13 +162,16 @@
               </p>
             </div>
             <div class="top__consultation-box">
-              <a class="top__consultation-calendar" href="#0">
-                <img
-                  class="top__consultation-img"
-                  src="images/icon/calendar.svg"
-                  alt="Календарь" />
-              </a>
-              <span class="top__consultation-date">22 Сентября</span>
+              <form class="top__consultation-form">
+                <input
+                  class="top__consultation-input datepicker-here"
+                  type="text"
+                  readonly
+                  data-min-view="days"
+                  data-view="days"
+                  data-date-format="dd MM"
+                  placeholder="Выбрать дату..." />
+              </form>
             </div>
             <a class="top__consultation-link" href="tel:88004443636"
               >Консультация</a
@@ -355,6 +358,18 @@
               </p>
             </div>
           </div>
+          <div
+            class="price__contact"
+            data-aos="fade-right"
+            data-aos-duration="1000">
+            <div class="price__contact-content">
+              <p class="price__contact-text">У вас сложная ситуация?</p>
+              <p class="price__contact-text">
+                Требуется индивидуальное решение?
+              </p>
+            </div>
+            <a class="price__contact-link" href="#0">Свяжитесь с нами</a>
+          </div>
         </div>
       </section>
       <section
@@ -492,7 +507,7 @@
               <div
                 class="questions__item"
                 data-aos="fade-right"
-                data-aos-duration="500">
+                data-aos-duration="1000">
                 <h3 class="questions__item-title">
                   В каких случаях мне откажут в срочном оформлении?
                 </h3>
@@ -507,7 +522,7 @@
               <div
                 class="questions__item"
                 data-aos="fade-right"
-                data-aos-duration="1000">
+                data-aos-duration="1100">
                 <h3 class="questions__item-title">
                   У меня нет московской регистрации, это проблема?
                 </h3>
@@ -522,7 +537,7 @@
               <div
                 class="questions__item"
                 data-aos="fade-right"
-                data-aos-duration="1500">
+                data-aos-duration="1200">
                 <h3 class="questions__item-title">
                   В какое отделение нужно будет ехать на подачу?
                 </h3>
@@ -538,7 +553,7 @@
               <div
                 class="questions__item"
                 data-aos="fade-right"
-                data-aos-duration="1500">
+                data-aos-duration="1300">
                 <h3 class="questions__item-title">Что включено в стоимость?</h3>
                 <p class="questions__item-text">
                   Существует несколько причин, в которых госорганы могут
@@ -551,7 +566,7 @@
               <div
                 class="questions__item"
                 data-aos="fade-right"
-                data-aos-duration="1500">
+                data-aos-duration="1400">
                 <h3 class="questions__item-title">
                   Влияют ли на выдачу загранпаспорта неоплаченные долги?
                 </h3>
@@ -568,7 +583,7 @@
             <div class="questions__person">
               <img
                 class="questions__person-img"
-                src="images/person-img.webp"
+                src="images/person-img.png"
                 alt="Фотография менеджера" />
               <p class="questions__person-name">Отвечает Марина Павлова</p>
               <p class="questions__person-position">менеджер по оформлению</p>
@@ -594,7 +609,7 @@
               </h2>
               <img
                 class="social__inst-img"
-                src="images/social-section/social-inst.jpg"
+                src="images/social-section/social-inst.webp"
                 alt="Наш инстаграм" />
             </div>
             <div
@@ -608,7 +623,7 @@
               </h3>
               <img
                 class="social__vk-img"
-                src="images/social-section/social-vk.jpg"
+                src="images/social-section/social-vk.webp"
                 alt="Наш ВК" />
               <a class="social__vk-link" href="#0">
                 <img
@@ -637,7 +652,7 @@
                   <div class="comments__person">
                     <img
                       class="comments__person-avatar"
-                      src="images/avatar/avatar-1.jpg"
+                      src="images/avatar/avatar-1.webp"
                       alt="Аватарка" />
                     <img
                       class="comments__person-social"
@@ -660,7 +675,7 @@
                   <div class="comments__person">
                     <img
                       class="comments__person-avatar"
-                      src="images/avatar/avatar-2.jpg"
+                      src="images/avatar/avatar-2.webp"
                       alt="Аватарка" />
                     <img
                       class="comments__person-social"
@@ -683,7 +698,7 @@
                   <div class="comments__person">
                     <img
                       class="comments__person-avatar"
-                      src="images/avatar/avatar-3.jpg"
+                      src="images/avatar/avatar-3.webp"
                       alt="Аватарка" />
                     <img
                       class="comments__person-social"
@@ -708,37 +723,37 @@
               <div class="photo__item">
                 <img
                   class="photo__img"
-                  src="images/slider-reviews/item-1.jpg"
+                  src="images/slider-reviews/item-1.webp"
                   alt="Картинка слайдов" />
               </div>
               <div class="photo__item">
                 <img
                   class="photo__img"
-                  src="images/slider-reviews/item-2.jpg"
+                  src="images/slider-reviews/item-2.webp"
                   alt="Картинка слайдов" />
               </div>
               <div class="photo__item">
                 <img
                   class="photo__img"
-                  src="images/slider-reviews/item-3.jpg"
+                  src="images/slider-reviews/item-3.webp"
                   alt="Картинка слайдов" />
               </div>
               <div class="photo__item">
                 <img
                   class="photo__img"
-                  src="images/slider-reviews/item-4.jpg"
+                  src="images/slider-reviews/item-4.webp"
                   alt="Картинка слайдов" />
               </div>
               <div class="photo__item">
                 <img
                   class="photo__img"
-                  src="images/slider-reviews/item-5.jpg"
+                  src="images/slider-reviews/item-5.webp"
                   alt="Картинка слайдов" />
               </div>
               <div class="photo__item">
                 <img
                   class="photo__img"
-                  src="images/slider-reviews/item-6.jpg"
+                  src="images/slider-reviews/item-6.webp"
                   alt="Картинка слайдов" />
               </div>
             </div>
@@ -779,7 +794,7 @@
               class="card__img"
               data-aos="fade-left"
               data-aos-duration="1000"
-              src="images/card-img.jpg"
+              src="images/card-img.webp"
               alt="Подарочная карта" />
           </div>
         </div>
@@ -857,22 +872,22 @@
           <div class="about__items">
             <img
               class="about__img"
-              src="images/slider-office/1.jpg"
+              src="images/slider-office/1.webp"
               alt="Наш офис" />
 
             <img
               class="about__img"
-              src="images/slider-office/2.jpg"
+              src="images/slider-office/2.webp"
               alt="Наш офис" />
 
             <img
               class="about__img"
-              src="images/slider-office/3.jpg"
+              src="images/slider-office/3.webp"
               alt="Наш офис" />
 
             <img
               class="about__img"
-              src="images/slider-office/4.jpg"
+              src="images/slider-office/4.webp"
               alt="Наш офис" />
           </div>
         </div>
@@ -898,7 +913,7 @@
             href="video.mp4">
             <img
               class="features__video-img"
-              src="images/features-video.jpg"
+              src="images/features-video.webp"
               alt="" />
           </a>
           <div

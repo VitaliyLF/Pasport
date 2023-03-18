@@ -175,7 +175,7 @@
   }
 }
 .top {
-  background-image: url(../images/top-bg.jpg);
+  background-image: url(../images/top-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -253,30 +253,35 @@
     line-height: 14px;
   }
   &__consultation-box {
-    background-color: rgba(223, 234, 255, 0.6);
-    border-radius: 4px;
-    padding: 16px 30px;
-    display: flex;
-    align-items: center;
-  }
-  &__consultation-calendar {
-    margin-right: 18px;
-  }
-  &__consultation-date {
-    padding-left: 68px;
-    @extend %Gilroy-Bold;
-    line-height: 24px;
     position: relative;
-    &::before {
+    background-color: rgba(223, 234, 255, 0.6);
+    padding: 16px 25px 16px 30px;
+    border-radius: 4px;
+    z-index: 10;
+    &::after {
       content: '';
       position: absolute;
-      background-image: url(../images/icon/top-arrow.svg);
-      width: 56px;
-      height: 12px;
-      left: 0;
+      background-image: url(../images/icon/calendar.svg);
+      background-repeat: no-repeat;
+      width: 33px;
+      height: 33px;
       top: 50%;
       transform: translateY(-50%);
+      left: 30px;
+      z-index: -1;
     }
+  }
+  &__consultation-input {
+    z-index: -1;
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+    font-size: 16px;
+    line-height: 24px;
+    color: $default;
+    @extend %Gilroy-Bold;
+    text-align: right;
+    cursor: pointer;
   }
   &__consultation-link {
     @extend %link;
@@ -392,6 +397,7 @@
   &__content {
     border: 1px solid #f2f2f2;
     display: none;
+    margin-bottom: 110px;
     &--active {
       display: block;
     }
@@ -498,6 +504,27 @@
   &__descr {
     color: $gray;
     padding-left: 30px;
+  }
+  &__contact {
+    background-image: url(../images/icon/price-bg.svg);
+    background-repeat: no-repeat;
+    background-color: $blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    padding: 106px 129px 112px 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__contact-text {
+    color: #fff;
+    font-size: 30px;
+    line-height: 37px;
+    @extend %Gilroy-Black;
+  }
+  &__contact-link {
+    @extend %link;
+    padding: 22px 48px;
   }
 }
 .deadlines {
@@ -956,7 +983,7 @@
 }
 .contact {
   padding: 120px 0;
-  background-image: url(../images/contact-bg.jpg);
+  background-image: url(../images/contact-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
