@@ -1,0 +1,135 @@
+@media (max-width: 975px) {
+  .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #fff;
+    padding: 10px 0;
+    &__info {
+      margin-right: 0;
+      position: absolute;
+      top: 73px;
+      left: 0;
+      transform: translateX(-110%);
+      transition: all 0.3s ease;
+      &--active {
+        transform: translateX(0);
+        transition: all 0.3s ease;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+      }
+    }
+    &__list {
+      box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.15);
+    }
+    &__item {
+      margin: 10px;
+      &--adress {
+        display: none;
+      }
+    }
+    &__burger {
+      display: block;
+    }
+  }
+  .header-nav {
+    width: 100%;
+    position: fixed;
+    top: 127px;
+    padding: 0;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+    &--active {
+      transform: translateX(0);
+      transition: all 0.3s ease;
+      z-index: 10;
+      background-color: #fff;
+    }
+    &__container {
+      padding: 0;
+    }
+    &__inner {
+      flex-direction: column;
+      align-items: start;
+    }
+    &__menu {
+      width: 100%;
+      margin-bottom: 31px;
+    }
+    &__list {
+      flex-direction: column;
+    }
+    &__item {
+      padding: 16px 0 20px 25px;
+      border-left: none;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    &__item + &__item {
+      padding-left: 25px;
+      margin-left: 0;
+    }
+    &__link {
+      &:hover {
+        color: inherit;
+      }
+    }
+    &__social {
+      padding-left: 25px;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .header {
+    &__logo {
+      max-width: 101px;
+    }
+    &__info {
+      top: 57px;
+    }
+    &__list {
+      justify-content: space-between;
+      li:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+    &__item {
+      &:nth-child(3) {
+        margin-left: 5px;
+      }
+      &::after {
+        top: -5px;
+      }
+    }
+    &__link {
+      font-size: 12px;
+      line-height: 15px;
+    }
+    &__text {
+      font-size: 10px;
+      line-height: 12px;
+    }
+    &__user-link {
+      padding: 10px 18px;
+      font-size: 10px;
+      line-height: 12px;
+    }
+    &__burger {
+      width: 25px;
+      height: 20px;
+      margin-left: 20px;
+    }
+    &__burger-input {
+      &:checked ~ span:nth-of-type(3) {
+        top: 17px;
+      }
+    }
+  }
+  .header-nav {
+    top: 104px;
+  }
+}

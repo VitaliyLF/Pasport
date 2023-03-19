@@ -1,5 +1,13 @@
 $(function () {
-  AOS.init()
+  AOS.init({
+    disable: 'mobile',
+  })
+
+  $('.header__burger-input').on('click', function () {
+    $(this).toggleClass('header__burger-input--active')
+    $('.header-nav').toggleClass('header-nav--active')
+    $('.header__info').toggleClass('header__info--active')
+  })
 
   let button = $('.call')
 

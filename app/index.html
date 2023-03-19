@@ -36,63 +36,67 @@
               alt="Логотип" />
           </a>
           <div class="header__content">
-            <div class="info">
-              <ul class="info__list">
-                <li class="info__item info__item--adress">
-                  <div class="info__content">
-                    <a class="info__link" href="#0">г. Москва</a>
-                    <p class="info__text">ул. Воронцовская, 20</p>
+            <div class="header__info">
+              <ul class="header__list">
+                <li class="header__item header__item--adress">
+                  <div class="header__contact">
+                    <a class="header__link" href="#0">г. Москва</a>
+                    <p class="header__text">ул. Воронцовская, 20</p>
                   </div>
                 </li>
-                <li class="info__item info__item--moscow">
-                  <div class="info__content">
-                    <a class="info__link" href="tel:84996419052"
+                <li class="header__item header__item--moscow">
+                  <div class="header__contact">
+                    <a class="header__link" href="tel:84996419052"
                       >8 (499) 641 90 52</a
                     >
-                    <p class="info__text">Для Москвы и МО</p>
+                    <p class="header__text">Для Москвы и МО</p>
                   </div>
                 </li>
-                <li class="info__item info__item--regions">
-                  <div class="info__content">
-                    <a class="info__link" href="tel:88004443636"
+                <li class="header__item header__item--regions">
+                  <div class="header__contact">
+                    <a class="header__link" href="tel:88004443636"
                       >8 (800) 444 36 36</a
                     >
-                    <p class="info__text">Для регионов РФ</p>
+                    <p class="header__text">Для регионов РФ</p>
                   </div>
                 </li>
               </ul>
             </div>
-            <div class="user-contact">
-              <a class="user-contact__link" href="tel:88004443636"
-                >Перезвоните мне</a
-              >
-            </div>
+            <a class="header__user-link" href="tel:88004443636"
+              >Перезвоните мне</a
+            >
+            <label class="header__burger" aria-label="Меню">
+              <input class="header__burger-input" type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
           </div>
         </div>
       </div>
     </header>
     <header class="header-nav">
-      <div class="container">
+      <div class="container header-nav--active">
         <div class="header-nav__inner">
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="#price">Цены и сроки</a>
+          <nav class="header-nav__menu">
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#price">Цены и сроки</a>
               </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#features">Полезное</a>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#features">Полезное</a>
               </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#questions">Справочная</a>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#questions">Справочная</a>
               </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#about">О компании</a>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#about">О компании</a>
               </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#contact">Контакты</a>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#contact">Контакты</a>
               </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#body">Паспорт РФ</a>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#body">Паспорт РФ</a>
               </li>
             </ul>
           </nav>
@@ -216,29 +220,35 @@
           </div>
           <div class="price__content price__content--active" id="tab-1">
             <div class="price__top">
-              <div class="price__info">
-                <div class="price__info-top">
-                  <h3 class="price__info-title">
+              <div class="price__header__info">
+                <div class="price__header__info-top">
+                  <h3 class="price__header__info-title">
                     Биометрический, нового образца
                   </h3>
-                  <h3 class="price__info-title">Дата получения*</h3>
+                  <h3 class="price__header__info-title">Дата получения*</h3>
                 </div>
-                <div class="price__info-content">
-                  <div class="price__info-item">
-                    <p class="price__info-text">Паспорт от 3 до 7 дней</p>
-                    <p class="price__info-text">10 ноября</p>
+                <div class="price__header__info-content">
+                  <div class="price__header__info-item">
+                    <p class="price__header__info-text">
+                      Паспорт от 3 до 7 дней
+                    </p>
+                    <p class="price__header__info-text">10 ноября</p>
                   </div>
-                  <div class="price__info-item">
-                    <p class="price__info-text">Паспорт от 8 до 14 дней</p>
-                    <p class="price__info-text">26 ноября</p>
+                  <div class="price__header__info-item">
+                    <p class="price__header__info-text">
+                      Паспорт от 8 до 14 дней
+                    </p>
+                    <p class="price__header__info-text">26 ноября</p>
                   </div>
-                  <div class="price__info-item">
-                    <p class="price__info-text">Паспорт от 15 до 29 дней</p>
-                    <p class="price__info-text">10 декабря</p>
+                  <div class="price__header__info-item">
+                    <p class="price__header__info-text">
+                      Паспорт от 15 до 29 дней
+                    </p>
+                    <p class="price__header__info-text">10 декабря</p>
                   </div>
-                  <div class="price__info-item">
-                    <p class="price__info-text">Паспорт от 30 дней</p>
-                    <p class="price__info-text">10 декабря</p>
+                  <div class="price__header__info-item">
+                    <p class="price__header__info-text">Паспорт от 30 дней</p>
+                    <p class="price__header__info-text">10 декабря</p>
                   </div>
                 </div>
               </div>
@@ -288,29 +298,35 @@
           </div>
           <div class="price__content" id="tab-2">
             <div class="price__top">
-              <div class="price__info">
-                <div class="price__info-top">
-                  <h5 class="price__info-title">
+              <div class="price__header__info">
+                <div class="price__header__info-top">
+                  <h5 class="price__header__info-title">
                     Биометрический, нового образца
                   </h5>
-                  <h5 class="price__info-title">Дата получения*</h5>
+                  <h5 class="price__header__info-title">Дата получения*</h5>
                 </div>
-                <div class="price__info-content">
-                  <div class="price__info-item">
-                    <p class="price__info-text">Паспорт от 3 до 7 дней</p>
-                    <p class="price__info-text">10 октября</p>
+                <div class="price__header__info-content">
+                  <div class="price__header__info-item">
+                    <p class="price__header__info-text">
+                      Паспорт от 3 до 7 дней
+                    </p>
+                    <p class="price__header__info-text">10 октября</p>
                   </div>
-                  <div class="price__info-item">
-                    <p class="price__info-text">Паспорт от 8 до 14 дней</p>
-                    <p class="price__info-text">26 октября</p>
+                  <div class="price__header__info-item">
+                    <p class="price__header__info-text">
+                      Паспорт от 8 до 14 дней
+                    </p>
+                    <p class="price__header__info-text">26 октября</p>
                   </div>
-                  <div class="price__info-item">
-                    <p class="price__info-text">Паспорт от 15 до 29 дней</p>
-                    <p class="price__info-text">10 ноября</p>
+                  <div class="price__header__info-item">
+                    <p class="price__header__info-text">
+                      Паспорт от 15 до 29 дней
+                    </p>
+                    <p class="price__header__info-text">10 ноября</p>
                   </div>
-                  <div class="price__info-item">
-                    <p class="price__info-text">Паспорт от 30 дней</p>
-                    <p class="price__info-text">10 ноября</p>
+                  <div class="price__header__info-item">
+                    <p class="price__header__info-text">Паспорт от 30 дней</p>
+                    <p class="price__header__info-text">10 ноября</p>
                   </div>
                 </div>
               </div>
@@ -648,7 +664,7 @@
           <div class="comments" data-aos="fade-left" data-aos-duration="1000">
             <div class="comments__inner">
               <div class="comments__item">
-                <div class="comments__info">
+                <div class="comments__header__info">
                   <div class="comments__person">
                     <img
                       class="comments__person-avatar"
@@ -659,9 +675,13 @@
                       src="images/icon/social-facebook.svg"
                       alt="Ссылка на Фейсбук" />
                   </div>
-                  <div class="comments__info-content">
-                    <span class="comments__info-name">Ольга Сонина</span>
-                    <span class="comments__info-time">28.02.2020 в 09:11</span>
+                  <div class="comments__header__info-content">
+                    <span class="comments__header__info-name"
+                      >Ольга Сонина</span
+                    >
+                    <span class="comments__header__info-time"
+                      >28.02.2020 в 09:11</span
+                    >
                   </div>
                 </div>
                 <p class="comments__text">
@@ -671,7 +691,7 @@
                 </p>
               </div>
               <div class="comments__item">
-                <div class="comments__info">
+                <div class="comments__header__info">
                   <div class="comments__person">
                     <img
                       class="comments__person-avatar"
@@ -682,9 +702,13 @@
                       src="images/icon/social-vk.svg"
                       alt="Ссылка на Фейсбук" />
                   </div>
-                  <div class="comments__info-content">
-                    <span class="comments__info-name">Руслан Мацьолек</span>
-                    <span class="comments__info-time">17.02.2020 в 09:11</span>
+                  <div class="comments__header__info-content">
+                    <span class="comments__header__info-name"
+                      >Руслан Мацьолек</span
+                    >
+                    <span class="comments__header__info-time"
+                      >17.02.2020 в 09:11</span
+                    >
                   </div>
                 </div>
                 <p class="comments__text">
@@ -694,7 +718,7 @@
                 </p>
               </div>
               <div class="comments__item">
-                <div class="comments__info">
+                <div class="comments__header__info">
                   <div class="comments__person">
                     <img
                       class="comments__person-avatar"
@@ -705,9 +729,13 @@
                       src="images/icon/social-inst.svg"
                       alt="Ссылка на Фейсбук" />
                   </div>
-                  <div class="comments__info-content">
-                    <span class="comments__info-name">Анжела Говорова</span>
-                    <span class="comments__info-time">28.02.2020 в 09:11</span>
+                  <div class="comments__header__info-content">
+                    <span class="comments__header__info-name"
+                      >Анжела Говорова</span
+                    >
+                    <span class="comments__header__info-time"
+                      >28.02.2020 в 09:11</span
+                    >
                   </div>
                 </div>
                 <p class="comments__text">
@@ -1015,17 +1043,17 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!--<footer class="footer">
       <div class="container">
         <div class="footer__inner">
-          <div class="footer__info">
-            <a class="footer__info-link" href="#0">
+          <div class="footer__header__info">
+            <a class="footer__header__info-link" href="#0">
               <img
-                class="footer__info-img"
+                class="footer__header__info-img"
                 src="images/icon/logo-footer.svg"
                 alt="Логотип" />
             </a>
-            <p class="footer__info-text">
+            <p class="footer__header__info-text">
               Срочное гарантированное оформление загранпаспорта в Москве
             </p>
           </div>
@@ -1089,8 +1117,8 @@
           </div>
         </div>
       </div>
-    </footer>
-    <footer class="footer-copy">
+    </footer>-->
+    <!--<footer class="footer-copy">
       <div class="container">
         <div class="footer-copy__inner">
           <div class="footer-copy__item">
@@ -1105,7 +1133,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer>-->
     <script src="js/main.min.js"></script>
   </body>
 </html>
