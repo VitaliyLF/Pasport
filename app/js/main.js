@@ -1,22 +1,12 @@
 $(function () {
   AOS.init({
-    disable: 'mobile',
+    //disable: 'mobile',
   })
 
-  $('.header__burger-input').on('click', function () {
-    $(this).toggleClass('header__burger-input--active')
+  $('.header__burger-input, .header-nav__menu a').on('click', function () {
+    $('.header__burger-input').toggleClass('header__burger-input--active')
     $('.header-nav').toggleClass('header-nav--active')
     $('.header__info').toggleClass('header__info--active')
-  })
-
-  let button = $('.call')
-
-  $(window).on('scroll', () => {
-    if ($(this).scrollTop() >= 1000) {
-      button.fadeIn()
-    } else {
-      button.fadeOut()
-    }
   })
 
   $('.datepicker-here').datepicker({
@@ -41,11 +31,21 @@ $(function () {
     },
   })
 
-  $('.menu__list a').on('click', function (event) {
+  let button = $('.call')
+
+  $(window).on('scroll', () => {
+    if ($(this).scrollTop() >= 1000) {
+      button.fadeIn()
+    } else {
+      button.fadeOut()
+    }
+  })
+
+  $('.header-nav__list a').on('click', function (event) {
     event.preventDefault()
     var id = $(this).attr('href'),
       top = $(id).offset().top
-    $('body,html').animate({ scrollTop: top }, 1000)
+    $('body,html').animate({ scrollTop: top }, 1500)
   })
 
   $('.price__link').on('click', function (e) {

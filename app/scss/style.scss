@@ -144,10 +144,10 @@
     span {
       display: block;
       position: absolute;
-      height: 2px;
+      height: 3px;
       width: 100%;
       background-color: $accent;
-      border-radius: 2px;
+      border-radius: 6px;
       opacity: 1;
       left: 0;
       transform: rotate(0deg);
@@ -215,7 +215,6 @@
       transition: all 0.3s ease;
     }
   }
-
   &__social {
     display: flex;
   }
@@ -532,19 +531,17 @@
   }
   &__design-cost {
     padding-right: 73px;
-    .cost {
-      &__title {
-        font-size: 17px;
-        line-height: 24px;
-        @extend %Gilroy-Medium;
-      }
-      &__subtitle {
-        font-size: 14px;
-        line-height: 24px;
-        color: $gray;
-        @extend %Gilroy-Medium;
-      }
-    }
+  }
+  &__design-cost {
+    font-size: 17px;
+    line-height: 24px;
+    @extend %Gilroy-Medium;
+  }
+  &__design-subtitle {
+    font-size: 14px;
+    line-height: 24px;
+    color: $gray;
+    @extend %Gilroy-Medium;
   }
   &__design-link {
     @extend %link;
@@ -749,9 +746,9 @@
   }
   &__content {
     margin-right: 60px;
+    width: 740px;
   }
   &__item {
-    width: 740px;
     margin-bottom: 7px;
     padding: 20px 33px;
     background-color: #fff;
@@ -765,6 +762,7 @@
     cursor: pointer;
     font-size: 16px;
     line-height: 24px;
+    padding-right: 20px;
     @extend %Gilroy-Bold;
     position: relative;
     &::after {
@@ -840,6 +838,11 @@
     line-height: 34px;
     @extend %Gilroy-ExtraBold;
     margin-bottom: 48px;
+  }
+  &__vk-img {
+    max-width: 670px;
+    height: 440px;
+    object-fit: cover;
   }
   &__vk-link {
     display: block;
