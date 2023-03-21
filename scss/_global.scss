@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  line-height: 28px;
+  color: $default;
+  @extend %Gilroy-Light;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  //overflow: hidden;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 38px;
+  @extend %Gilroy-ExtraBold;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: $accent;
+    border-radius: 6px;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.select {
+  color: $accent;
+}

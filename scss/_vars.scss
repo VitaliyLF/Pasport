@@ -1,0 +1,58 @@
+$default: #222222;
+$accent: #e93123;
+$gray: #818181;
+$blue: #0037a1;
+
+%Gilroy-Light {
+  font-family: 'Gilroy-Light', sans-serif;
+  font-weight: 300;
+}
+
+%Gilroy-Regular {
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%Gilroy-Medium {
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%Gilroy-Bold {
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%Gilroy-ExtraBold {
+  font-family: 'Gilroy-ExtraBold', sans-serif;
+  font-weight: 800;
+}
+
+%Gilroy-Black {
+  font-family: 'Gilroy-Black', sans-serif;
+  font-weight: 900;
+}
+
+%link {
+  background-color: $accent;
+  box-shadow: 0px 0px 10px rgba(233, 49, 35, 0.4);
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  line-height: 19px;
+  @extend %Gilroy-Bold;
+  padding: 21px 58px;
+}
+
+%btn {
+  border: none;
+  cursor: pointer;
+  background-color: $accent;
+  box-shadow: 0px 0px 10px rgba(233, 49, 35, 0.4);
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  line-height: 19px;
+  @extend %Gilroy-Bold;
+  padding: 21px 58px;
+}
