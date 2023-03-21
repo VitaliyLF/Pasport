@@ -4,9 +4,10 @@
     bottom: 50px;
   }
   .title {
+    max-width: 370px;
+    margin: 0 auto 30px;
     text-align: center;
     padding-bottom: 16px;
-    margin-bottom: 30px;
     &::after {
       left: 50%;
       transform: translateX(-50%);
@@ -236,8 +237,10 @@
       margin-right: 0;
       margin-bottom: 20px;
     }
-    .title {
+    &__inst-box {
       max-width: 100%;
+      height: auto;
+      overflow: visible;
     }
     &__inst-img {
       max-width: 100%;
@@ -253,6 +256,167 @@
       max-width: 100%;
       height: auto;
     }
+  }
+  .reviews {
+    padding: 60px 0 73px;
+    .title {
+      max-width: 300px;
+    }
+    .comments {
+      &__inner {
+        margin-bottom: 31px;
+      }
+      &__item {
+        text-align: center;
+      }
+      &__info {
+        flex-direction: column;
+        margin-bottom: 17px;
+      }
+      &__person {
+        margin: 0 auto 17px;
+      }
+      &__person-social {
+        left: 56%;
+      }
+      .slick-slide > div {
+        width: 300px;
+        margin: 0 auto;
+      }
+      .slick-slider .slick-slide {
+        margin-right: 0px;
+      }
+      .slick-arrow {
+        top: 50%;
+      }
+    }
+    .photo {
+      &__img {
+        margin: 0 auto;
+      }
+      .slick-slide > div {
+        width: 270px;
+        margin: 0 auto;
+      }
+      .slick-slider .slick-slide {
+        margin-right: 0px;
+      }
+    }
+  }
+  .card {
+    padding: 60px 0;
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__content {
+      margin-top: 0;
+      text-align: center;
+    }
+    &__benefits-text {
+      text-align: center;
+      padding-left: 0;
+      padding-top: 46px;
+      &::before {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+    &__img {
+      max-width: 100%;
+      height: auto;
+      margin-left: -150px;
+    }
+  }
+  .contact {
+    &__card {
+      margin: 0 auto;
+    }
+  }
+  .about {
+    padding: 60px 0 70px;
+    &__text {
+      text-align: center;
+    }
+    &__img {
+      margin-right: 0;
+    }
+    .slick-slide > div {
+      width: 570px;
+      height: auto;
+      margin: 0 auto;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .features {
+    padding: 60px 0;
+    &__text {
+      text-align: center;
+    }
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__video {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+    &__video-img {
+      max-width: 100%;
+    }
+    &__content {
+      padding: 0 10px;
+      text-align: center;
+    }
+    &__content-text {
+      text-align: left;
+    }
+  }
+  .footer {
+    padding: 15px 0 55px;
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      text-align: center;
+    }
+    &__info {
+      display: none;
+    }
+    &__phone {
+      display: none;
+    }
+    &__adress-local {
+      padding-left: 0;
+      margin-bottom: 22px;
+      &::before {
+        display: none;
+      }
+    }
+    &__adress-timetable {
+      padding-left: 0;
+      margin-bottom: 17px;
+      &::before {
+        display: none;
+      }
+    }
+    &__rating {
+      margin-bottom: 17px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__rating-social {
+      margin-top: 28px;
+      justify-content: space-between;
+    }
+  }
+  .footer-copy {
+    display: none;
   }
 }
 
@@ -355,11 +519,40 @@
   }
 }
 
+@media (max-width: 620px) {
+  .about {
+    .slick-slide > div {
+      max-width: 100%;
+      height: auto;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .features {
+    &__content-item {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__content-link {
+      margin-bottom: 12px;
+    }
+    &__content-img {
+      margin-right: 0;
+    }
+    &__content-text {
+      text-align: center;
+    }
+  }
+}
+
 @media (max-width: 440px) {
   .title {
+    max-width: 300px;
     font-size: 26px;
     line-height: 38px;
-    margin-bottom: 16px;
+    margin: 0 auto 16px;
   }
   .header {
     &__logo {
@@ -521,6 +714,41 @@
     }
     &__item-title {
       line-height: 22px;
+    }
+  }
+  .reviews {
+    .comments {
+      .slick-arrow {
+        top: 43px;
+      }
+    }
+  }
+  .card {
+    &__text {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+    &__benefits {
+      margin-bottom: 20px;
+    }
+    &__img {
+      margin-left: -100px;
+    }
+  }
+  .about {
+    &__text {
+      max-width: 300px;
+      font-size: 18px;
+      line-height: 24px;
+      margin: 0 auto 25px;
+    }
+  }
+  .features {
+    &__text {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 21px;
     }
   }
 }
