@@ -65,12 +65,11 @@
             <a class="header__user-link" href="tel:88004443636">
               Перезвоните мне
             </a>
-            <label class="header__burger" aria-label="Меню">
-              <input class="header__burger-input" type="checkbox" />
-              <span></span>
-              <span></span>
-              <span></span>
-            </label>
+            <button class="header__burger" aria-label="Меню">
+              <span class="header__burger-bar header__burger-bar1"></span>
+              <span class="header__burger-bar header__burger-bar2"></span>
+              <span class="header__burger-bar header__burger-bar3"></span>
+            </button>
           </div>
         </div>
       </div>
@@ -193,15 +192,15 @@
           <div class="top-info__inner">
             <div
               class="top-info__item"
-              data-aos="fade-up"
-              data-aos-duration="500">
+              data-aos="flip-up"
+              data-aos-duration="1000">
               <h2 class="top-info__title top-info__title--contract">
                 Заключаем официальный договор
               </h2>
             </div>
             <div
               class="top-info__item"
-              data-aos="fade-up"
+              data-aos="flip-up"
               data-aos-duration="1000">
               <h2 class="top-info__title top-info__title--price">
                 Честная цена без скрытых платежей
@@ -209,8 +208,8 @@
             </div>
             <div
               class="top-info__item"
-              data-aos="fade-up"
-              data-aos-duration="1500">
+              data-aos="flip-up"
+              data-aos-duration="1000">
               <h2 class="top-info__title top-info__title--mobile">
                 Регистрация в любом регионе России
               </h2>
@@ -312,20 +311,20 @@
                 </div>
                 <div class="price__info-content">
                   <div class="price__info-item">
-                    <p class="price__info-text">Паспорт от 3 до 7 дней</p>
-                    <p class="price__info-text">10 октября</p>
+                    <p class="price__info-text">Паспорт от 2 до 5 дней</p>
+                    <p class="price__info-text">17 декабря</p>
                   </div>
                   <div class="price__info-item">
-                    <p class="price__info-text">Паспорт от 8 до 14 дней</p>
-                    <p class="price__info-text">26 октября</p>
+                    <p class="price__info-text">Паспорт от 6 до 12 дней</p>
+                    <p class="price__info-text">24 декабря</p>
                   </div>
                   <div class="price__info-item">
-                    <p class="price__info-text">Паспорт от 15 до 29 дней</p>
-                    <p class="price__info-text">10 ноября</p>
+                    <p class="price__info-text">Паспорт от 12 до 28 дней</p>
+                    <p class="price__info-text">12 января</p>
                   </div>
                   <div class="price__info-item">
                     <p class="price__info-text">Паспорт от 30 дней</p>
-                    <p class="price__info-text">10 ноября</p>
+                    <p class="price__info-text">14 января</p>
                   </div>
                 </div>
               </div>
@@ -427,7 +426,7 @@
             <div
               class="design__items"
               data-aos="fade-up"
-              data-aos-duration="500">
+              data-aos-duration="1000">
               <div class="design__item">
                 <div class="design__item-box design__item-box--one">
                   <h3 class="design__item-heading">Оформление в офисе</h3>
@@ -462,7 +461,7 @@
               <div
                 class="design__item"
                 data-aos="fade-up"
-                data-aos-duration="1500">
+                data-aos-duration="1000">
                 <div class="design__item-box design__item-box--three">
                   <h3 class="design__item-heading">Получение загранпаспорта</h3>
                   <span class="design__item-time">ДО 20 МИНУТ</span>
@@ -477,7 +476,10 @@
               </div>
             </div>
           </div>
-          <div class="design__guarantee">
+          <div
+            class="design__guarantee"
+            data-aos="zoom-in"
+            data-aos-duration="1000">
             <div class="design__guarantee-inner">
               <div class="design__guarantee-content">
                 <h3 class="design__guarantee-title">
@@ -604,10 +606,12 @@
                 Следите за нами в
                 <span class="select">Instagram</span>
               </h2>
-              <img
-                class="social__inst-img"
-                src="images/social-section/social-inst.webp"
-                alt="Наш инстаграм" />
+              <div class="social__inst-box">
+                <img
+                  class="social__inst-img"
+                  src="images/social-section/social-inst.webp"
+                  alt="Наш инстаграм" />
+              </div>
             </div>
             <div
               class="social__vk"
@@ -634,17 +638,16 @@
           </div>
         </div>
       </section>
-      <!--<section
-        class="reviews"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duration="1000">
+      <section class="reviews">
         <div class="container">
           <h2 class="title">Читайте реальные отзывы от наших клиентов</h2>
-          <div class="comments" data-aos="fade-left" data-aos-duration="1000">
+          <div class="comments">
             <div class="comments__inner">
-              <div class="comments__item">
-                <div class="comments__header__info">
+              <div
+                class="comments__item"
+                data-aos="fade-up"
+                data-aos-duration="1000">
+                <div class="comments__info">
                   <div class="comments__person">
                     <img
                       class="comments__person-avatar"
@@ -655,11 +658,9 @@
                       src="images/icon/social-facebook.svg"
                       alt="Ссылка на Фейсбук" />
                   </div>
-                  <div class="comments__header__info-content">
-                    <span class="comments__header__info-name">
-                      Ольга Сонина
-                    </span>
-                    <span class="comments__header__info-time">
+                  <div class="comments__info-content">
+                    <span class="comments__info-name"> Ольга Сонина </span>
+                    <span class="comments__info-time">
                       28.02.2020 в 09:11
                     </span>
                   </div>
@@ -670,8 +671,11 @@
                   положительные эмоции при обращении в эту компанию! Спасибо
                 </p>
               </div>
-              <div class="comments__item">
-                <div class="comments__header__info">
+              <div
+                class="comments__item"
+                data-aos="fade-up"
+                data-aos-duration="1000">
+                <div class="comments__info">
                   <div class="comments__person">
                     <img
                       class="comments__person-avatar"
@@ -682,11 +686,9 @@
                       src="images/icon/social-vk.svg"
                       alt="Ссылка на Фейсбук" />
                   </div>
-                  <div class="comments__header__info-content">
-                    <span class="comments__header__info-name">
-                      Руслан Мацьолек
-                    </span>
-                    <span class="comments__header__info-time">
+                  <div class="comments__info-content">
+                    <span class="comments__info-name"> Руслан Мацьолек </span>
+                    <span class="comments__info-time">
                       17.02.2020 в 09:11
                     </span>
                   </div>
@@ -697,8 +699,11 @@
                   говорили , что желательно по месту регистрации.
                 </p>
               </div>
-              <div class="comments__item">
-                <div class="comments__header__info">
+              <div
+                class="comments__item"
+                data-aos="fade-up"
+                data-aos-duration="1000">
+                <div class="comments__info">
                   <div class="comments__person">
                     <img
                       class="comments__person-avatar"
@@ -709,11 +714,9 @@
                       src="images/icon/social-inst.svg"
                       alt="Ссылка на Фейсбук" />
                   </div>
-                  <div class="comments__header__info-content">
-                    <span class="comments__header__info-name">
-                      Анжела Говорова
-                    </span>
-                    <span class="comments__header__info-time">
+                  <div class="comments__info-content">
+                    <span class="comments__info-name"> Анжела Говорова </span>
+                    <span class="comments__info-time">
                       28.02.2020 в 09:11
                     </span>
                   </div>
@@ -726,7 +729,7 @@
               </div>
             </div>
           </div>
-          <div class="photo" data-aos="fade-left" data-aos-duration="1000">
+          <div class="photo">
             <div class="photo__inner">
               <div class="photo__item">
                 <img
@@ -767,17 +770,13 @@
             </div>
           </div>
         </div>
-      </section>-->
-      <!--<section
-        class="card"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duration="1000">
+      </section>
+      <section class="card">
         <div class="container">
           <div class="card__inner">
             <div
               class="card__content"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="1000">
               <h2 class="title">
                 Получите
@@ -801,14 +800,14 @@
             </div>
             <img
               class="card__img"
-              data-aos="fade-left"
+              data-aos="zoom-in"
               data-aos-duration="1000"
               src="images/card-img.webp"
               alt="Подарочная карта" />
           </div>
         </div>
-      </section>-->
-      <!--<section class="contact" id="contact">
+      </section>
+      <section class="contact" id="contact">
         <div class="container">
           <div
             class="contact__card"
@@ -866,16 +865,13 @@
             </div>
           </div>
         </div>
-      </section>-->
-      <!--<section
-        class="about"
-        id="about"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duration="1000">
+      </section>
+      <section class="about" id="about">
         <div class="container">
-          <h2 class="title">Добро пожаловать к нам в офис!</h2>
-          <p class="about__text">
+          <h2 class="title" data-aos="flip-up" data-aos-duration="1000">
+            Добро пожаловать к нам в офис!
+          </h2>
+          <p class="about__text" data-aos="flip-up" data-aos-duration="1000">
             С радостью угостим вас чашечкой кофе или чая.
           </p>
           <div class="about__items">
@@ -900,22 +896,19 @@
               alt="Наш офис" />
           </div>
         </div>
-      </section>-->
-      <!--<section
-        class="features"
-        id="features"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duration="1000">
+      </section>
+      <section class="features" id="features">
         <div class="container features__container">
-          <h2 class="title">Особенности оформления заграничного паспорта</h2>
-          <p class="features__text">Просто посмотрите видео ниже</p>
+          <h2 class="title" data-aos="flip-up" data-aos-duration="1000">
+            Особенности оформления заграничного паспорта
+          </h2>
+          <p class="features__text" data-aos="flip-up" data-aos-duration="1000">
+            Просто посмотрите видео ниже
+          </p>
         </div>
         <div class="features__inner">
           <a
             class="features__video"
-            data-aos="fade-right"
-            data-aos-duration="1000"
             data-fancybox
             data-width="1400"
             data-height="790"
@@ -925,10 +918,7 @@
               src="images/features-video.webp"
               alt="" />
           </a>
-          <div
-            class="features__content"
-            data-aos="fade-left"
-            data-aos-duration="1000">
+          <div class="features__content">
             <h3 class="features__content-title">
               Образцы бланков и заявлений:
             </h3>
@@ -936,7 +926,10 @@
               <p class="features__content-caption">
                 Образцы бланков и заявлений:
               </p>
-              <div class="features__content-item">
+              <div
+                class="features__content-item"
+                data-aos="fade-up"
+                data-aos-duration="1000">
                 <a
                   class="features__content-link"
                   href="example.pdf"
@@ -952,7 +945,10 @@
                   взрослых 1
                 </p>
               </div>
-              <div class="features__content-item">
+              <div
+                class="features__content-item"
+                data-aos="fade-up"
+                data-aos-duration="900">
                 <a
                   class="features__content-link"
                   href="example.pdf"
@@ -971,7 +967,10 @@
             </div>
             <div class="features__content-form">
               <p class="features__content-caption">Формы:</p>
-              <div class="features__content-item">
+              <div
+                class="features__content-item"
+                data-aos="fade-up"
+                data-aos-duration="800">
                 <a
                   class="features__content-link"
                   href="example.pdf"
@@ -987,7 +986,10 @@
                   загранпаспорт
                 </p>
               </div>
-              <div class="features__content-item">
+              <div
+                class="features__content-item"
+                data-aos="fade-up"
+                data-aos-duration="700">
                 <a
                   class="features__content-link"
                   href="example.pdf"
@@ -1003,7 +1005,10 @@
                   загранпаспорт
                 </p>
               </div>
-              <div class="features__content-item">
+              <div
+                class="features__content-item"
+                data-aos="fade-up"
+                data-aos-duration="600">
                 <a
                   class="features__content-link"
                   href="example.pdf"
@@ -1022,19 +1027,19 @@
             </div>
           </div>
         </div>
-      </section>-->
+      </section>
     </main>
-    <!--<footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__inner">
-          <div class="footer__header__info">
-            <a class="footer__header__info-link" href="#0">
+          <div class="footer__info">
+            <a class="footer__info-link" href="#0">
               <img
-                class="footer__header__info-img"
+                class="footer__info-img"
                 src="images/icon/logo-footer.svg"
                 alt="Логотип" />
             </a>
-            <p class="footer__header__info-text">
+            <p class="footer__info-text">
               Срочное гарантированное оформление загранпаспорта в Москве
             </p>
           </div>
@@ -1098,8 +1103,8 @@
           </div>
         </div>
       </div>
-    </footer>-->
-    <!--<footer class="footer-copy">
+    </footer>
+    <footer class="footer-copy">
       <div class="container">
         <div class="footer-copy__inner">
           <div class="footer-copy__item">
@@ -1114,7 +1119,7 @@
           </div>
         </div>
       </div>
-    </footer>-->
+    </footer>
     <script src="js/main.min.js"></script>
   </body>
 </html>
