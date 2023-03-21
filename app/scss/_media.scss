@@ -2,6 +2,9 @@
   .call {
     right: 25px;
     bottom: 50px;
+    &:hover a {
+      animation: none;
+    }
   }
   .title {
     max-width: 370px;
