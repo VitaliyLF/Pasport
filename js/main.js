@@ -43,13 +43,7 @@ $(function () {
     event.preventDefault()
     var id = $(this).attr('href'),
       top = $(id).offset().top + -120
-    $('body,html').animate(
-      { scrollTop: top },
-      {
-        duration: 1500,
-        passive: true,
-      }
-    )
+    $('body,html').animate({ scrollTop: top }, 1500)
   })
 
   $('.price__link').on('click', function (e) {
