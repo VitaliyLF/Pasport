@@ -3,13 +3,17 @@ $(function () {
 
   let button = $('.call')
 
-  $(window).on('scroll', () => {
-    if ($(this).scrollTop() >= 1000) {
-      button.fadeIn()
-    } else {
-      button.fadeOut()
-    }
-  })
+  $(window).on(
+    'scroll',
+    () => {
+      if ($(this).scrollTop() >= 1000) {
+        button.fadeIn()
+      } else {
+        button.fadeOut()
+      }
+    },
+    { passive: true }
+  )
 
   $('.header__burger, .header-nav__link').on('click', function () {
     $('.header__burger').toggleClass('header__burger--active')
@@ -43,7 +47,13 @@ $(function () {
     event.preventDefault()
     var id = $(this).attr('href'),
       top = $(id).offset().top + -120
-    $('body,html').animate({ scrollTop: top }, 1500)
+    $('body,html').animate(
+      { scrollTop: top },
+      {
+        duration: 1500,
+        passive: true,
+      }
+    )
   })
 
   $('.price__link').on('click', function (e) {
