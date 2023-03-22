@@ -202,7 +202,7 @@
     @extend %Gilroy-Bold;
     &:hover {
       color: $blue;
-      transition: all 0.3s ease;
+      transition: color 0.3s ease;
     }
   }
   &__social {
@@ -337,6 +337,7 @@
   padding: 171px 0 118px;
   &__inner {
     display: flex;
+    justify-content: space-between;
     gap: 30px;
   }
   &__item {
@@ -345,7 +346,6 @@
     border-radius: 6px;
     text-align: center;
     width: 370px;
-    width: 100%;
     height: 240px;
     display: flex;
     flex-direction: column;
@@ -623,11 +623,10 @@
   &__item {
     max-width: 370px;
     &:hover {
-      transition: all 0.3s ease;
       .design__item-link {
         opacity: 1;
         visibility: visible;
-        transition: all 0.3s ease;
+        transition: opacity 0.3s ease;
       }
     }
   }
@@ -743,7 +742,6 @@
     padding: 20px 33px;
     background-color: #fff;
     border-radius: 4px;
-    transition: all 0.3s ease;
     &:last-of-type {
       margin-bottom: 22px;
     }
@@ -765,12 +763,12 @@
       top: 50%;
       transform: translateY(-50%);
       right: 0;
-      transition: all 0.3s ease;
+      transition: transform 0.3s ease;
     }
     &.active {
       &::after {
         transform: rotate(180deg);
-        transition: all 0.3s ease;
+        transition: transform 0.3s ease;
       }
     }
   }
