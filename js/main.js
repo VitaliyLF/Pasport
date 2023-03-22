@@ -3,17 +3,13 @@ $(function () {
 
   let button = $('.call')
 
-  $(window).on(
-    'scroll',
-    () => {
-      if ($(this).scrollTop() >= 1000) {
-        button.fadeIn()
-      } else {
-        button.fadeOut()
-      }
-    },
-    { passive: true }
-  )
+  $(window).on('scroll', () => {
+    if ($(this).scrollTop() >= 1000) {
+      button.fadeIn()
+    } else {
+      button.fadeOut()
+    }
+  })
 
   $('.header__burger, .header-nav__link').on('click', function () {
     $('.header__burger').toggleClass('header__burger--active')
