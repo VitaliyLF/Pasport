@@ -21,9 +21,19 @@
     &--tel {
       background-color: $accent;
       margin-bottom: 10px;
+      &__img {
+        width: 18px;
+        height: 18px;
+        object-fit: cover;
+      }
     }
     &--text {
       background-color: $blue;
+      &__img {
+        width: 23px;
+        height: 23px;
+        object-fit: cover;
+      }
     }
     &:hover {
       animation: heartbeat 1.5s ease-in-out infinite both;
@@ -50,22 +60,6 @@
           animation-timing-function: ease-out;
         }
       }
-    }
-  }
-  &__img {
-    display: block;
-    image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    &--phone {
-      width: 18px;
-      height: 18px;
-    }
-    &--message {
-      width: 23px;
-      height: 23px;
     }
   }
 }
@@ -225,14 +219,9 @@
     display: flex;
   }
   &__social-link {
-    display: block;
-    width: 38px;
-    height: 38px;
-    svg {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   &__social-link + &__social-link {
     margin-left: 7px;
@@ -753,12 +742,9 @@
     width: 740px;
   }
   &__item {
-    width: 100%;
-    text-align: left;
     margin-bottom: 7px;
     padding: 20px 33px;
     background-color: #fff;
-    border: none;
     border-radius: 4px;
     &:last-of-type {
       margin-bottom: 22px;
@@ -868,7 +854,7 @@
       position: absolute;
       width: 46px;
       height: 46px;
-      background-image: url(../images/icon/social-vk.svg);
+      background-image: url(../images/icon/vk-comments.svg);
       background-repeat: no-repeat;
       top: -23px;
       left: 50%;
@@ -912,16 +898,13 @@
       border-radius: 50%;
     }
     &__person-social {
-      width: 30px;
+      max-width: 30px;
       height: 30px;
+      object-fit: cover;
+      border-radius: 2px;
       position: absolute;
       left: 60px;
       bottom: 0;
-      image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
     }
     &__info-content {
       display: flex;
@@ -1182,20 +1165,11 @@
     padding-left: 27px;
   }
   &__social-link {
-    display: block;
-    width: 30px;
-    height: 30px;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
     &:not(:last-child) {
       margin-right: 6px;
-    }
-  }
-  &__social-img {
-    width: 30px;
-    height: 30px;
-    image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
     }
   }
 }
@@ -1427,20 +1401,11 @@
     margin-top: 42px;
   }
   &__rating-link {
-    display: block;
-    width: 30px;
-    height: 30px;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
     &:not(:last-child) {
       margin-right: 6px;
-    }
-  }
-  &__rating-icon {
-    width: 30px;
-    height: 30px;
-    image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
     }
   }
 }
