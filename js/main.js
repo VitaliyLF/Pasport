@@ -46,13 +46,12 @@ $(function () {
     $('body,html').animate({ scrollTop: top }, 1500)
   })
 
-  $('.price__link').on('click', function (e) {
-    e.preventDefault()
-    $('.price__link').removeClass('price__link--active')
-    $(this).addClass('price__link--active')
-
+  $('.price__tab').on('click', function () {
+    $('.price__tab--active').removeClass('price__tab--active')
+    $(this).addClass('price__tab--active')
+    var tabId = $(this).attr('data-tab')
     $('.price__content').removeClass('price__content--active')
-    $($(this).attr('href')).addClass('price__content--active')
+    $($(this).attr('data-tab')).addClass('price__content--active')
   })
 
   $('.questions__item-title').on('click', function () {

@@ -14,16 +14,14 @@
   <body id="body">
     <div class="call">
       <a class="call__link call__link--tel" href="#0">
-        <img
-          class="call__link-img"
-          src="images/icon/phone-white.svg"
-          alt="Красная иконка трубки телефона" />
+        <svg class="call__img call__img--phone">
+          <image href="images/icon/phone-white.svg" />
+        </svg>
       </a>
       <a class="call__link call__link--text" href="#0">
-        <img
-          class="call__link-img"
-          src="images/icon/message.svg"
-          alt="Синяя иконка сообщения" />
+        <svg class="call__img call__img--message">
+          <image href="images/icon/message.svg" />
+        </svg>
       </a>
     </div>
     <header class="header">
@@ -105,30 +103,27 @@
               href="#0"
               aria-label="Наш Фейсбук"
               target="_blank">
-              <img
-                class="header-nav__social-img"
-                src="images/icon/facebook.svg"
-                alt="Иконка нашей соц сети Фейсбук" />
+              <svg>
+                <image href="images/icon/facebook.svg" />
+              </svg>
             </a>
             <a
               class="header-nav__social-link"
               href="#0"
               aria-label="Наш ВК"
               target="_blank">
-              <img
-                class="header-nav__social-img"
-                src="images/icon/vk.svg"
-                alt="Иконка нашей соц сети ВК" />
+              <svg>
+                <image href="images/icon/vk.svg" />
+              </svg>
             </a>
             <a
               class="header-nav__social-link"
               href="#0"
               aria-label="Наш Инстаграм"
               target="_blank">
-              <img
-                class="header-nav__social-img"
-                src="images/icon/instagram.svg"
-                alt="Иконка нашей соц сети Инстаграм" />
+              <svg>
+                <image href="images/icon/instagram.svg" />
+              </svg>
             </a>
           </div>
         </div>
@@ -179,16 +174,14 @@
               </p>
             </div>
             <div class="top__consultation-box">
-              <form class="top__consultation-form">
-                <input
-                  class="top__consultation-input datepicker-here"
-                  type="text"
-                  readonly
-                  data-min-view="days"
-                  data-view="days"
-                  data-date-format="dd MM"
-                  placeholder="Выбрать дату..." />
-              </form>
+              <input
+                class="top__consultation-input datepicker-here"
+                type="text"
+                readonly
+                data-min-view="days"
+                data-view="days"
+                data-date-format="dd MM"
+                placeholder="Выбрать дату..." />
             </div>
             <a class="top__consultation-link" href="tel:88004443636">
               Консультация
@@ -236,9 +229,11 @@
         data-aos-duration="1000">
         <div class="container">
           <h2 class="price__title">Стоимость оформления</h2>
-          <div class="price__links">
-            <a class="price__link price__link--active" href="#tab-1">Москва</a>
-            <a class="price__link" href="#tab-2">Регионы</a>
+          <div class="price__tabs">
+            <button class="price__tab price__tab--active" data-tab="#tab-1">
+              Москва
+            </button>
+            <button class="price__tab" data-tab="#tab-2">Регионы</button>
           </div>
           <div class="price__content price__content--active" id="tab-1">
             <div class="price__top">
@@ -443,7 +438,7 @@
               data-aos="fade-up"
               data-aos-duration="1000">
               <div class="design__item">
-                <div class="design__item-box design__item-box--one">
+                <div class="design__item-box">
                   <h3 class="design__item-heading">Оформление в офисе</h3>
                   <span class="design__item-time">ДО 20 МИНУТ</span>
                 </div>
@@ -460,7 +455,7 @@
                 class="design__item"
                 data-aos="fade-up"
                 data-aos-duration="1000">
-                <div class="design__item-box design__item-box--two">
+                <div class="design__item-box">
                   <h3 class="design__item-heading">Подача документов</h3>
                   <span class="design__item-time">ДО 20 МИНУТ</span>
                 </div>
@@ -477,7 +472,7 @@
                 class="design__item"
                 data-aos="fade-up"
                 data-aos-duration="1000">
-                <div class="design__item-box design__item-box--three">
+                <div class="design__item-box">
                   <h3 class="design__item-heading">Получение загранпаспорта</h3>
                   <span class="design__item-time">ДО 20 МИНУТ</span>
                 </div>
@@ -523,10 +518,11 @@
           <div class="questions__inner">
             <div class="questions__content one-open">
               <h2 class="title">Ответы на вопросы</h2>
-              <div
+              <button
                 class="questions__item"
                 data-aos="fade-up"
-                data-aos-duration="1000">
+                data-aos-duration="1000"
+                aria-label="В каких случаях мне откажут в срочном оформлении?">
                 <h3 class="questions__item-title">
                   В каких случаях мне откажут в срочном оформлении?
                 </h3>
@@ -537,11 +533,12 @@
                   порядке выезда из Российской Федерации и въезда в Российскую
                   Федерацию”.
                 </p>
-              </div>
-              <div
+              </button>
+              <button
                 class="questions__item"
                 data-aos="fade-up"
-                data-aos-duration="900">
+                data-aos-duration="900"
+                aria-label="У меня нет московской регистрации, это проблема?">
                 <h3 class="questions__item-title">
                   У меня нет московской регистрации, это проблема?
                 </h3>
@@ -552,11 +549,12 @@
                   порядке выезда из Российской Федерации и въезда в Российскую
                   Федерацию”.
                 </p>
-              </div>
-              <div
+              </button>
+              <button
                 class="questions__item"
                 data-aos="fade-up"
-                data-aos-duration="800">
+                data-aos-duration="800"
+                aria-label="В какое отделение нужно будет ехать на подачу?">
                 <h3 class="questions__item-title">
                   В какое отделение нужно будет ехать на подачу?
                 </h3>
@@ -568,11 +566,12 @@
                   зарегистрированы — в подразделении, которое обслуживает адрес
                   временной регистрации
                 </p>
-              </div>
-              <div
+              </button>
+              <button
                 class="questions__item"
                 data-aos="fade-up"
-                data-aos-duration="700">
+                data-aos-duration="700"
+                aria-label="Что включено в стоимость?">
                 <h3 class="questions__item-title">Что включено в стоимость?</h3>
                 <p class="questions__item-text">
                   Существует несколько причин, в которых госорганы могут
@@ -581,11 +580,12 @@
                   порядке выезда из Российской Федерации и въезда в Российскую
                   Федерацию”.
                 </p>
-              </div>
-              <div
+              </button>
+              <button
                 class="questions__item"
                 data-aos="fade-up"
-                data-aos-duration="600">
+                data-aos-duration="600"
+                aria-label="Влияют ли на выдачу загранпаспорта неоплаченные долги?">
                 <h3 class="questions__item-title">
                   Влияют ли на выдачу загранпаспорта неоплаченные долги?
                 </h3>
@@ -596,7 +596,7 @@
                   порядке выезда из Российской Федерации и въезда в Российскую
                   Федерацию”.
                 </p>
-              </div>
+              </button>
               <a class="questions__link" href="#0" target="_blank"
                 >Задать свой вопрос</a
               >
@@ -647,10 +647,6 @@
                 href="#0"
                 aria-label="Наш ВК"
                 target="_blank">
-                <img
-                  class="social__vk-icon"
-                  src="images/icon/social-vk.svg"
-                  alt="Наш ВК" />
                 <p class="social__vk-descr">
                   Больше полезного в нашем сообществе
                 </p>
@@ -674,10 +670,9 @@
                       class="comments__person-avatar"
                       src="images/avatar/avatar-1.webp"
                       alt="Аватарка нашей подписчицы" />
-                    <img
-                      class="comments__person-social"
-                      src="images/icon/social-facebook.svg"
-                      alt="Изображение социальной сети Фейсбук" />
+                    <svg class="comments__person-social">
+                      <image href="images/icon/social-facebook.svg" />
+                    </svg>
                   </div>
                   <div class="comments__info-content">
                     <span class="comments__info-name"> Ольга Сонина </span>
@@ -702,10 +697,9 @@
                       class="comments__person-avatar"
                       src="images/avatar/avatar-2.webp"
                       alt="Аватарка нашего подписчика" />
-                    <img
-                      class="comments__person-social"
-                      src="images/icon/social-vk.svg"
-                      alt="Изображение социальной сети ВК" />
+                    <svg class="comments__person-social">
+                      <image href="images/icon/social-vk.svg" />
+                    </svg>
                   </div>
                   <div class="comments__info-content">
                     <span class="comments__info-name"> Руслан Мацьолек </span>
@@ -730,10 +724,9 @@
                       class="comments__person-avatar"
                       src="images/avatar/avatar-3.webp"
                       alt="Аватарка нашей подписчицы" />
-                    <img
-                      class="comments__person-social"
-                      src="images/icon/social-inst.svg"
-                      alt="Изображение социальной сети Инстаграм" />
+                    <svg class="comments__person-social">
+                      <image href="images/icon/social-inst.svg" />
+                    </svg>
                   </div>
                   <div class="comments__info-content">
                     <span class="comments__info-name"> Анжела Говорова </span>
@@ -873,30 +866,27 @@
                 href="#0"
                 aria-label="Наш Фейсбук"
                 target="_blank">
-                <img
-                  class="contact__social-img"
-                  src="images/icon/social-facebook.svg"
-                  alt="Изображение социальной сети Фейсбук" />
+                <svg class="contact__social-img">
+                  <image href="images/icon/social-facebook.svg" />
+                </svg>
               </a>
               <a
                 class="contact__social-link"
                 href="#0"
                 aria-label="Наш ВК"
                 target="_blank">
-                <img
-                  class="contact__social-img"
-                  src="images/icon/social-vk.svg"
-                  alt="Изображение социальной сети ВК" />
+                <svg class="contact__social-img">
+                  <image href="images/icon/social-vk.svg" />
+                </svg>
               </a>
               <a
                 class="contact__social-link"
                 href="#0"
                 aria-label="Наш Телеграмм"
                 target="_blank">
-                <img
-                  class="contact__social-img"
-                  src="images/icon/social-tg.svg"
-                  alt="Изображение социальной сети Телеграмм" />
+                <svg class="contact__social-img">
+                  <image href="images/icon/social-tg.svg" />
+                </svg>
               </a>
             </div>
           </div>
@@ -971,11 +961,7 @@
                 class="features__content-item"
                 data-aos="fade-up"
                 data-aos-duration="1000">
-                <a
-                  class="features__content-link"
-                  href="example.pdf"
-                  download
-                  target="_blank">
+                <a class="features__content-link" href="example.pdf" download>
                   <img
                     class="features__content-img"
                     src="images/icon/icon-pdf.svg"
@@ -990,11 +976,7 @@
                 class="features__content-item"
                 data-aos="fade-up"
                 data-aos-duration="900">
-                <a
-                  class="features__content-link"
-                  href="example.pdf"
-                  download
-                  target="_blank">
+                <a class="features__content-link" href="example.pdf" download>
                   <img
                     class="features__content-img"
                     src="images/icon/icon-pdf.svg"
@@ -1012,11 +994,7 @@
                 class="features__content-item"
                 data-aos="fade-up"
                 data-aos-duration="800">
-                <a
-                  class="features__content-link"
-                  href="example.pdf"
-                  download
-                  target="_blank">
+                <a class="features__content-link" href="example.pdf" download>
                   <img
                     class="features__content-img"
                     src="images/icon/icon-pdf.svg"
@@ -1031,11 +1009,7 @@
                 class="features__content-item"
                 data-aos="fade-up"
                 data-aos-duration="700">
-                <a
-                  class="features__content-link"
-                  href="example.pdf"
-                  download
-                  target="_blank">
+                <a class="features__content-link" href="example.pdf" download>
                   <img
                     class="features__content-img"
                     src="images/icon/icon-doc.svg"
@@ -1050,11 +1024,7 @@
                 class="features__content-item"
                 data-aos="fade-up"
                 data-aos-duration="600">
-                <a
-                  class="features__content-link"
-                  href="example.pdf"
-                  download
-                  target="_blank">
+                <a class="features__content-link" href="example.pdf" download>
                   <img
                     class="features__content-img"
                     src="images/icon/icon-pdf.svg"
@@ -1127,30 +1097,27 @@
                 href="#0"
                 aria-label="Наш Фейсбук"
                 target="_blank">
-                <img
-                  class="footer__rating-icon"
-                  src="images/icon/social-facebook.svg"
-                  alt="Изображение социальной сети Фейсбук" />
+                <svg class="footer__rating-icon">
+                  <image href="images/icon/social-facebook.svg" />
+                </svg>
               </a>
               <a
                 class="footer__rating-link"
                 href="#0"
                 aria-label="Наш ВК"
                 target="_blank">
-                <img
-                  class="footer__rating-icon"
-                  src="images/icon/social-vk.svg"
-                  alt="Изображение социальной сети ВК" />
+                <svg class="footer__rating-icon">
+                  <image href="images/icon/social-vk.svg" />
+                </svg>
               </a>
               <a
                 class="footer__rating-link"
                 href="#0"
                 aria-label="Наш Телеграмм"
                 target="_blank">
-                <img
-                  class="footer__rating-icon"
-                  src="images/icon/social-tg.svg"
-                  alt="Изображение социальной сети Телеграмм" />
+                <svg class="footer__rating-icon">
+                  <image href="images/icon/social-tg.svg" />
+                </svg>
               </a>
             </div>
           </div>
