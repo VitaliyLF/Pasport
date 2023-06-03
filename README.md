@@ -7,3 +7,4 @@
 - Реализация анимации блоков
 - SVG изображения и оптимизация
 - Pixel Perfect
+- Зеленая зона The W3C Markup Validation
